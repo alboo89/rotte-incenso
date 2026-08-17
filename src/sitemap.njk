@@ -1,0 +1,20 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- set coppie = [["/", "/en/"], ["/destinazioni.html", "/en/destinations.html"], ["/servizi.html", "/en/services.html"], ["/contatti.html", "/en/contact.html"]] %}
+{%- for it, en in coppie %}
+<url>
+<loc>{{ sito.url }}{{ it }}</loc>
+<xhtml:link href="{{ sito.url }}{{ it }}" hreflang="it" rel="alternate"/>
+<xhtml:link href="{{ sito.url }}{{ en }}" hreflang="en" rel="alternate"/>
+</url>
+<url>
+<loc>{{ sito.url }}{{ en }}</loc>
+<xhtml:link href="{{ sito.url }}{{ it }}" hreflang="it" rel="alternate"/>
+<xhtml:link href="{{ sito.url }}{{ en }}" hreflang="en" rel="alternate"/>
+</url>
+{%- endfor %}
+</urlset>

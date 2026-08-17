@@ -1,0 +1,3 @@
+# Bozza di lavoro: rimuovere il Disallow al lancio.
+User-agent: *
+Disallow: /

@@ -1,0 +1,61 @@
+/* =========================================================================
+   Rotte d'incenso — regole di base
+   Accompagna brand.js. Qui sta solo cio' che Tailwind non copre.
+   ========================================================================= */
+
+:root {
+  --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans:  "DM Sans", Inter, "Helvetica Neue", Arial, sans-serif;
+
+  /* La scala, ripetuta qui per chi legge il CSS senza aprire brand.js */
+  --t-display: 52px;  --t-h1: 44px;      --t-h2: 34px;   --t-h3: 26px;
+  --t-h4: 21px;       --t-quote: 26px;   --t-body-lg: 18px;
+  --t-body: 16px;     --t-body-sm: 14px; --t-caption: 12px;
+  --t-label: 11px;    --t-micro: 9px;
+}
+
+/* Evita che il testo salti quando il webfont finisce di caricare */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: var(--sans); text-rendering: optimizeLegibility; }
+
+/* Cormorant ha cifre minuscole per impostazione predefinita: nei titoli
+   e nei prezzi si vogliono allineate, altrimenti "1989" balla sulla riga. */
+h1, h2, h3, h4, .font-display, .font-h1, .font-h2, .font-h3, .font-h4, .font-quote {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+/* Il nome del brand in barra: un solo punto di verita' */
+.wordmark {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Le icone Material non devono ereditare il peso del testo circostante */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+}
+
+/* Icone: tre misure sole, invece dei quattro valori sparsi di prima */
+.icon-sm { font-size: 18px; }
+.icon-md { font-size: 24px; }
+.icon-lg { font-size: 32px; }
+
+/* Larghezza di riga leggibile per i blocchi di testo lungo */
+.prose-narrow { max-width: 68ch; }
+
+/* Focus visibile per la navigazione da tastiera: prima esisteva solo nei campi
+   del form. L'anello usa il verde primario e si vede su tutte le superfici. */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #516442;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.bg-primary a:focus-visible, footer a:focus-visible, footer button:focus-visible {
+  outline-color: #FAF8F4;
+}

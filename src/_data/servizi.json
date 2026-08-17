@@ -1,0 +1,19 @@
+{
+  "occhiello": "Come posso aiutarti",
+  "titolo": "I Miei Servizi",
+  "sottotitolo": "Tre modi diversi per scoprire il tuo prossimo capitolo di viaggio, dal supporto puntuale alla progettazione completa.",
+  "lista": [
+    { "icona": "explore", "titolo": "Itinerari su Misura",
+      "testo": "Progettazione completa del tuo viaggio, dalla prima idea alla partenza: alloggi, esperienze e ritmi cuciti su di te.",
+      "punti": ["Consulenza iniziale approfondita", "Itinerario giorno per giorno", "Prenotazioni gestite per te"],
+      "prezzo": "A partire da €250" },
+    { "icona": "chat", "titolo": "Consulenza Viaggio",
+      "testo": "Una sessione strategica per chi vuole organizzare da sé, ma con la sicurezza di un metodo esperto alle spalle.",
+      "punti": ["Videochiamata di 45-60 minuti", "Consigli su rotte e periodi", "Riepilogo scritto post-call"],
+      "prezzo": "A partire da €120" },
+    { "icona": "handshake", "titolo": "Esperienze Locali",
+      "testo": "Prenotazione di singole attività autentiche: artigiani, guide locali e realtà difficili da trovare da soli.",
+      "punti": ["Selezione curata di partner locali", "Prenotazione diretta e assistita", "Nessun sovrapprezzo nascosto"],
+      "prezzo": "A partire da €40" }
+  ]
+}

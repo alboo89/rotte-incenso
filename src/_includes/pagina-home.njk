@@ -1,0 +1,128 @@
+<section class="relative w-full pt-[104px] pb-0 bg-base">
+<div class="max-w-container-max mx-auto px-sm md:px-lg grid grid-cols-1 md:grid-cols-12 gap-lg items-center py-xl">
+<div class="md:col-span-6 order-2 md:order-1">
+<img alt="{{ sito.nome }}" class="h-20 w-auto mb-md opacity-90" src="/assets/img/logo-icona.png" width="248" height="527"/>
+<h1 class="font-h1 text-h1 md:text-display leading-[1.05] text-primary mb-2">{{ h.hero.nome }}</h1>
+<div class="font-h3 text-h3 text-secondary mb-md">{{ h.hero.ruolo }}</div>
+<p class="font-quote text-h4 text-on-surface-variant italic max-w-xl mb-lg leading-snug">{{ h.hero.frase }}</p>
+</div>
+<div class="md:col-span-6 order-1 md:order-2">
+<div class="relative rounded-xl overflow-hidden shadow-[0_10px_40px_rgba(42,42,40,0.12)] aspect-[4/5] max-h-[560px] mx-auto">
+<img alt="{{ h.hero.foto_alt }}" class="w-full h-full object-cover" src="{{ h.hero.foto }}"/>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-base py-xl px-sm md:px-lg relative z-10">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center mb-xl">
+<div class="flex justify-center">
+<div class="relative inline-block">
+<div class="relative w-64 h-64 md:w-96 md:h-96 rounded-[50%] overflow-hidden border-4 border-white shadow-sm z-10">
+<img alt="{{ h.storia.foto_alt }}" class="w-full h-full object-cover" src="{{ h.storia.foto }}"/>
+</div>
+<div class="absolute inset-0 -m-6 pointer-events-none z-0 rounded-[50%] border border-dashed" style="border-color: rgba(81, 100, 66, 0.30);"></div>
+</div>
+</div>
+<div class="space-y-md">
+<h2 class="font-h2 text-h2 text-primary">{{ h.storia.titolo }}</h2>
+<div class="w-12 h-1 bg-[#B8735A] rounded-full"></div>
+{%- for p in h.storia.apertura %}
+<p class="font-body text-body text-on-surface-variant">{{ p }}</p>
+{%- endfor %}
+</div>
+</div>
+<div class="max-w-3xl mx-auto space-y-md">
+{%- for p in h.storia.racconto %}
+<p class="font-body text-body text-on-surface-variant">{{ p }}</p>
+{%- endfor %}
+<blockquote class="border-l-4 border-secondary pl-md py-sm my-lg">
+<p class="font-quote text-quote text-secondary italic leading-snug">{{ h.storia.citazione }}</p>
+</blockquote>
+<p class="font-body text-body text-on-surface-variant">{{ h.storia.chiusura_citazione }}</p>
+<p class="font-body text-body text-on-surface font-medium border-t border-light-border pt-md mt-lg">{{ h.storia.chiusura }}</p>
+</div>
+</div>
+</section>
+
+<div class="w-full leading-none overflow-hidden bg-base">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#F2ECE3"></path>
+</svg>
+</div>
+
+<section class="bg-alt py-xl px-sm md:px-lg">
+<div class="max-w-container-max mx-auto text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary mb-sm">{{ h.valori.titolo }}</h2>
+<p class="font-body text-body text-on-surface-variant max-w-2xl mx-auto">{{ h.valori.sottotitolo }}</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-lg">
+{%- for v in h.valori.lista %}
+<div class="bg-white p-lg rounded-xl shadow-[0_4px_20px_rgba(42,42,40,0.05)] hover:-translate-y-1 transition-transform duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-cream rounded-full flex items-center justify-center mb-md text-primary">
+<span class="material-symbols-outlined icon-lg">{{ v.icona }}</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-sm">{{ v.titolo }}</h3>
+<p class="font-body text-body text-on-surface-variant">{{ v.testo }}</p>
+</div>
+{%- endfor %}
+</div>
+</section>
+
+<div class="w-full leading-none overflow-hidden bg-alt">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#FAF8F4"></path>
+</svg>
+</div>
+
+<section class="bg-base py-xl px-sm md:px-lg relative overflow-hidden">
+<div class="max-w-container-max mx-auto text-center mb-xl">
+<h2 class="font-h2 text-h2 text-on-background">{{ h.come_lavoriamo.titolo }}</h2>
+<p class="font-body text-body text-on-surface-variant max-w-2xl mx-auto mt-sm">{{ h.come_lavoriamo.sottotitolo }}</p>
+</div>
+<div class="max-w-5xl mx-auto relative">
+<div class="hidden md:block absolute top-[30px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-primary-container to-transparent z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-xl md:gap-md relative z-10">
+{%- for passo in h.come_lavoriamo.passi %}
+<div class="flex flex-col items-center text-center">
+<div class="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center text-primary font-h3 text-h3 mb-sm border border-light-border shadow-sm">{{ loop.index }}</div>
+<span class="material-symbols-outlined text-primary mb-xs icon-lg">{{ passo.icona }}</span>
+<h3 class="font-h3 text-h3 text-on-background mb-xs">{{ passo.titolo }}</h3>
+<p class="font-body text-body text-on-surface-variant text-body-sm">{{ passo.testo }}</p>
+</div>
+{%- endfor %}
+</div>
+</div>
+</section>
+
+<div class="w-full leading-none overflow-hidden bg-base">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#E8DED1"></path>
+</svg>
+</div>
+
+<section class="bg-deep py-xl px-sm md:px-lg">
+<div class="max-w-[900px] mx-auto text-center mb-xl">
+<h2 class="font-h2 text-h2 text-on-background">{{ h.faq.titolo }}</h2>
+</div>
+<div class="max-w-[900px] mx-auto bg-white rounded-xl overflow-hidden" style="box-shadow: 0 4px 20px rgba(42,42,40,0.05);">
+{%- for item in h.faq.domande %}
+<div class="border-b border-light-border last:border-b-0 group">
+<button aria-controls="faq-body-{{ loop.index0 }}" aria-expanded="false" class="w-full flex justify-between items-center gap-sm py-md px-md md:px-lg text-left hover:bg-cream transition-colors" onclick="toggleFaq({{ loop.index0 }})" type="button">
+<span class="font-h3 text-[22px] text-on-background">{{ item.domanda }}</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 shrink-0" id="faq-icon-{{ loop.index0 }}">expand_more</span>
+</button>
+<div class="hidden px-md md:px-lg pb-md" id="faq-body-{{ loop.index0 }}">
+<p class="font-body text-body text-on-surface-variant">{{ item.risposta }}</p>
+</div>
+</div>
+{%- endfor %}
+</div>
+</section>
+
+<div class="w-full leading-none overflow-hidden bg-deep">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#FAF8F4"></path>
+</svg>
+</div>

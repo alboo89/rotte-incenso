@@ -1,0 +1,36 @@
+{
+  "titolo": "Let’s Talk",
+  "intro": "Get in touch for a free 30-minute initial consultation. Together we’ll find out whether my slow travel approach is in tune with your travel dreams.",
+  "location": "Milan, Italy",
+  "location_nota": "Available for online calls anywhere",
+  "nota_risposta": "I will reply to your request within 48 working hours to arrange our first introductory call.",
+  "form_titolo": "Tell me about your ideal journey",
+  "stili_viaggio": [
+    "Slow adventure",
+    "Culture and spirituality",
+    "Nature and trekking",
+    "Local food and wine",
+    "A mix of everything"
+  ],
+  "budget_opzioni": [
+    "€2,000 - €4,000 per person",
+    "€4,000 - €8,000 per person",
+    "€8,000+ per person"
+  ],
+  "etichette": {
+    "nome": "Full Name *",
+    "email": "Email *",
+    "telefono": "Phone",
+    "partecipanti": "Number of Travellers *",
+    "stile": "Travel Style *",
+    "destinazione": "Ideal Destination",
+    "durata": "Duration",
+    "budget": "Approximate Budget *",
+    "messaggio": "Your ideal journey",
+    "placeholder_destinazione": "E.g. Vietnam, Morocco...",
+    "placeholder_durata": "E.g. 2 weeks",
+    "placeholder_messaggio": "Share your expectations, your dreams or any important detail.",
+    "seleziona": "Select...",
+    "invia": "Send My Request"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "occhiello": "How I can help you",
+  "titolo": "My Services",
+  "sottotitolo": "Three different ways to discover your next travel chapter, from targeted support to complete trip design.",
+  "lista": [
+    {
+      "icona": "explore",
+      "titolo": "Tailor-Made Itineraries",
+      "testo": "Complete design of your journey, from the first idea to departure: accommodation, experiences and rhythms tailored to you.",
+      "punti": [
+        "In-depth initial consultation",
+        "Day-by-day itinerary",
+        "Bookings handled for you"
+      ],
+      "prezzo": "From €250"
+    },
+    {
+      "icona": "chat",
+      "titolo": "Travel Consultation",
+      "testo": "A strategic session for those who want to organise things themselves, with the reassurance of an expert method behind them.",
+      "punti": [
+        "45-60 minute video call",
+        "Advice on routes and seasons",
+        "Written summary after the call"
+      ],
+      "prezzo": "From €120"
+    },
+    {
+      "icona": "handshake",
+      "titolo": "Local Experiences",
+      "testo": "Booking of individual authentic activities: artisans, local guides and places that are hard to find on your own.",
+      "punti": [
+        "Curated selection of local partners",
+        "Direct, assisted booking",
+        "No hidden markups"
+      ],
+      "prezzo": "From €40"
+    }
+  ]
+}

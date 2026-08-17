@@ -1,0 +1,119 @@
+{%- set e = c.etichette -%}
+<section class="bg-base py-xl text-center px-sm relative overflow-hidden pt-40">
+<div class="max-w-3xl mx-auto relative z-10">
+<h1 class="font-h1 text-h1 text-primary mb-6">{{ c.titolo }}</h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-2xl mx-auto">{{ c.intro }}</p>
+</div>
+</section>
+<div class="w-full leading-none overflow-hidden bg-base">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#F2ECE3"></path>
+</svg>
+</div>
+<section class="bg-alt px-sm md:px-lg py-xl">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg md:gap-xl">
+<div class="md:col-span-5 relative">
+<div class="sticky top-32 space-y-md">
+<div>
+<h2 class="font-h2 text-h2 text-primary mb-8">{{ 'Dettagli' if lang == 'it' else 'Details' }}</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary icon-md">mail</span>
+<div>
+<p class="font-label text-label text-on-surface-variant uppercase mb-1">Email</p>
+<a class="font-body text-body hover:text-secondary transition-colors" href="mailto:{{ sito.email }}">{{ sito.email }}</a>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary icon-md">phone</span>
+<div>
+<p class="font-label text-label text-on-surface-variant uppercase mb-1">{{ 'Telefono / WhatsApp' if lang == 'it' else 'Phone / WhatsApp' }}</p>
+<a class="font-body text-body hover:text-secondary transition-colors" href="tel:{{ sito.telefono | replace(' ', '') }}">{{ sito.telefono }}</a>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary icon-md">location_on</span>
+<div>
+<p class="font-label text-label text-on-surface-variant uppercase mb-1">Location</p>
+<p class="font-body text-body">{{ c.location }}<br/><span class="text-body-sm opacity-70">{{ c.location_nota }}</span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-sand rounded-xl p-6 mt-8 shadow-sm flex items-start gap-4">
+<span class="material-symbols-outlined text-primary icon-md">check_circle</span>
+<p class="font-body text-body text-on-surface-variant">{{ c.nota_risposta }}</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl p-sm md:p-xl shadow-sm border border-light-border">
+<h3 class="font-h3 text-h3 text-primary mb-8">{{ c.form_titolo }}</h3>
+<form action="https://api.web3forms.com/submit" class="space-y-6" method="POST">
+<input name="access_key" type="hidden" value="{{ sito.web3forms_key }}"/>
+<input name="subject" type="hidden" value="{{ 'Nuova richiesta dal sito' if lang == 'it' else 'New request from' }} {{ sito.nome }}"/>
+<input class="hidden" name="botcheck" style="display:none;" type="checkbox"/>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="name">{{ e.nome }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="name" name="nome" required type="text"/>
+</div>
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="email">{{ e.email }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="email" name="email" required type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="phone">{{ e.telefono }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="phone" name="telefono" type="tel"/>
+</div>
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="partecipanti">{{ e.partecipanti }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="partecipanti" max="30" min="1" name="numero_partecipanti" required type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="style">{{ e.stile }}</label>
+<select class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="style" name="stile_di_viaggio" required>
+<option value="">{{ e.seleziona }}</option>
+{%- for s in c.stili_viaggio %}
+<option>{{ s }}</option>
+{%- endfor %}
+</select>
+</div>
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="budget">{{ e.budget }}</label>
+<select class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="budget" name="budget" required>
+<option value="">{{ e.seleziona }}</option>
+{%- for b in c.budget_opzioni %}
+<option>{{ b }}</option>
+{%- endfor %}
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="destination">{{ e.destinazione }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="destination" name="destinazione" placeholder="{{ e.placeholder_destinazione }}" type="text"/>
+</div>
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="duration">{{ e.durata }}</label>
+<input class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="duration" name="durata" placeholder="{{ e.placeholder_durata }}" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label text-label text-on-surface-variant uppercase mb-2" for="message">{{ e.messaggio }}</label>
+<textarea class="w-full bg-base border-light-border rounded focus:ring-primary focus:border-primary font-body text-body py-3 px-4 shadow-sm" id="message" name="messaggio" placeholder="{{ e.placeholder_messaggio }}" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label text-label uppercase tracking-wider py-4 rounded hover:bg-olive-dark transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1" type="submit">
+{{ e.invia }}
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>

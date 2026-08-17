@@ -1,0 +1,36 @@
+{
+  "titolo": "Iniziamo a Parlare",
+  "intro": "Contattami per una consulenza iniziale gratuita di 30 minuti. Scopriremo insieme se il mio approccio slow travel è in sintonia con i tuoi sogni di viaggio.",
+  "location": "Milano, Italia",
+  "location_nota": "Disponibile per call online ovunque",
+  "nota_risposta": "Risponderò alla tua richiesta entro 48 ore lavorative per organizzare la nostra prima call conoscitiva.",
+  "form_titolo": "Raccontami il tuo viaggio ideale",
+  "stili_viaggio": [
+    "Avventura lenta",
+    "Cultura e spiritualità",
+    "Natura e trekking",
+    "Enogastronomia locale",
+    "Mix di tutto"
+  ],
+  "budget_opzioni": [
+    "2.000€ - 4.000€ a persona",
+    "4.000€ - 8.000€ a persona",
+    "8.000€+ a persona"
+  ],
+  "etichette": {
+    "nome": "Nome Completo *",
+    "email": "Email *",
+    "telefono": "Telefono",
+    "partecipanti": "Numero Partecipanti *",
+    "stile": "Stile di Viaggio *",
+    "destinazione": "Destinazione Ideale",
+    "durata": "Durata",
+    "budget": "Budget Indicativo *",
+    "messaggio": "Il tuo viaggio ideale",
+    "placeholder_destinazione": "Es. Vietnam, Marocco...",
+    "placeholder_durata": "Es. 2 settimane",
+    "placeholder_messaggio": "Condividi le tue aspettative, i tuoi sogni o qualsiasi dettaglio importante.",
+    "seleziona": "Seleziona...",
+    "invia": "Invia la Mia Richiesta"
+  }
+}

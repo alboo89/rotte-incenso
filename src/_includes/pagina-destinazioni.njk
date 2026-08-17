@@ -1,0 +1,27 @@
+{%- set t = ui[lang] -%}
+<section class="bg-base py-xl text-center px-sm relative overflow-hidden pt-40">
+<div class="max-w-3xl mx-auto relative z-10">
+<h1 class="font-h1 text-h1 text-on-surface mb-md relative z-10">{{ t.dest_titolo }}</h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-2xl mx-auto relative z-10">{{ t.dest_intro }}</p>
+</div>
+</section>
+<section class="bg-base pb-xl px-sm md:px-lg max-w-container-max mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+{%- for d in collections.destinazioni %}
+{%- set nome = d.data.titolo_en if lang == 'en' and d.data.titolo_en else d.data.titolo %}
+{%- set descr = d.data.descrizione_en if lang == 'en' and d.data.descrizione_en else d.data.descrizione %}
+<div class="group relative h-[320px] rounded-xl overflow-hidden {% if loop.last and loop.length % 3 == 1 %}sm:col-start-2 lg:col-start-2{% endif %}"
+     style="{% if d.data.foto %}background-image: url('{{ d.data.foto }}'); background-size: cover; background-position: center;{% else %}background-color: {{ d.data.colore }};{% endif %}">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+{%- if not d.data.foto %}
+<span class="material-symbols-outlined absolute inset-0 flex items-center justify-center text-white/10 pointer-events-none" style="font-size: 120px;">{{ d.data.icona }}</span>
+<span class="absolute top-sm right-sm bg-black/35 backdrop-blur-sm text-white/80 font-label text-micro uppercase tracking-widest px-2 py-1 rounded-full">{{ t.foto_da_inserire }}</span>
+{%- endif %}
+<div class="absolute bottom-0 left-0 w-full p-md">
+<h2 class="font-h3 text-h3 text-on-primary mb-xs">{{ nome }}</h2>
+<p class="font-body text-body-sm text-white/85 leading-snug">{{ descr }}</p>
+</div>
+</div>
+{%- endfor %}
+</div>
+</section>

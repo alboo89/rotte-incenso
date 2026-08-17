@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "nome": "Laura Atzori",
+    "ruolo": "The person behind Rotte d’incenso",
+    "frase": "Travelling is not simply an escape: it is how I feel alive.",
+    "foto": "/assets/img/ritratto-laura.jpg",
+    "foto_alt": "Laura Atzori, founder of Rotte d’incenso, portrayed in natural light"
+  },
+  "storia": {
+    "titolo": "My Story",
+    "foto": "/assets/img/laura-taccuino.jpg",
+    "foto_alt": "Laura writing travel notes in a notebook",
+    "apertura": [
+      "My name is Laura. I was born in Sardinia in 1989, and travelling is not simply an escape for me: it is how I feel alive.",
+      "My passion for travel turned into a profession when I decided to complete my Travel Designer training. It was a wonderful experience that allowed me to broaden my passion, enriching it with the technical skills needed to organise every itinerary in practice."
+    ],
+    "racconto": [
+      "I have a natural fondness for equatorial latitudes, for warm lands where the air grows dense and smells of spices and memory. From the heart of South-East Asia to the peaks of Nepal, all the way to the lights of Africa, between the red of Morocco and the vastness of the plains of Kenya and Tanzania: these are the places where I truly feel at home.",
+      "Rotte d’incenso was born from a precise inclination: a pull towards places where you can breathe an authentic spirituality, far from the rhythms of the Western world. I feel a sincere nostalgia for the atmospheres of another time, for those corners of the planet that still guard ancient traditions and human rhythms.",
+      "It is an inspiration that comes from afar, born also from devouring the books of Tiziano Terzani, who taught me to look at Asia and the world with respect, slowness, curiosity and nostalgia.",
+      "One evening, talking about travel with a friend, she asked me: «And Latin America, when?». I told her that I am happy to design Latin America for those who ask me, but that my nose keeps following the scent of incense, and it always leads in the same direction. She looked at me with a smile and said:"
+    ],
+    "citazione": "«You really are Terzani’s daughter!»",
+    "chiusura_citazione": "I was moved: I believe that sentence defines me perfectly.",
+    "chiusura": "I don’t create mass-produced itineraries. I design journeys for those seeking encounters, a deeper gaze and a reconnection with the authentic beauty of the world."
+  },
+  "valori": {
+    "titolo": "My Values",
+    "sottotitolo": "The three pillars on which I build every single itinerary.",
+    "lista": [
+      {
+        "icona": "hourglass_empty",
+        "titolo": "Slowness",
+        "testo": "Unhurried rhythms to savour every moment, far from the frenzy of mass tourism."
+      },
+      {
+        "icona": "favorite",
+        "titolo": "Authenticity",
+        "testo": "Real connections with local communities, artisans and preserved traditions."
+      },
+      {
+        "icona": "eco",
+        "titolo": "Sustainability",
+        "testo": "A gentle impact on the places we visit, supporting circular economies."
+      }
+    ]
+  },
+  "come_lavoriamo": {
+    "titolo": "How We Work Together",
+    "sottotitolo": "Four steps, without haste, from the first wish to departure.",
+    "passi": [
+      {
+        "icona": "chat",
+        "titolo": "Consultation",
+        "testo": "A first meeting to understand your wishes and your ideal travel style."
+      },
+      {
+        "icona": "design_services",
+        "titolo": "Design",
+        "testo": "A tailor-made itinerary, built around authentic experiences."
+      },
+      {
+        "icona": "luggage",
+        "titolo": "Preparation",
+        "testo": "You receive all the documents, advice and local contacts you need."
+      },
+      {
+        "icona": "flight_takeoff",
+        "titolo": "Adventure",
+        "testo": "Leave worry-free, with assistance guaranteed throughout your journey."
+      }
+    ]
+  },
+  "faq": {
+    "titolo": "Frequently Asked Questions",
+    "domande": [
+      {
+        "domanda": "What does the first consultation include?",
+        "risposta": "The first consultation is an introductory meeting (usually a video call) of about 45 minutes. We will discuss your interests, budget and expectations to see whether my approach matches what you are looking for."
+      },
+      {
+        "domanda": "Do you also book flights?",
+        "risposta": "I mainly design the on-the-ground itinerary (accommodation, experiences, internal transport). I can advise you on the best flight options, but booking international flights remains up to you, for greater flexibility."
+      },
+      {
+        "domanda": "How much does the service cost?",
+        "risposta": "The cost depends on the complexity and length of the trip. You will find the starting prices of the three services on the Services page; I always provide a clear quote before starting."
+      },
+      {
+        "domanda": "How far in advance should I contact you?",
+        "risposta": "Ideally 3-4 months before departure, to have the widest choice of accommodation and local guides. For simpler trips I can also work on shorter timelines."
+      },
+      {
+        "domanda": "Do you work with large groups?",
+        "risposta": "I mostly work with solo travellers, couples and small groups of up to 8 people: it is the size that allows a journey that is truly slow and respectful of places."
+      },
+      {
+        "domanda": "Do you offer assistance during the trip?",
+        "risposta": "Yes. I remain reachable for the whole duration of the journey as a discreet point of reference, and you always have the direct contacts of local partners."
+      }
+    ]
+  }
+}

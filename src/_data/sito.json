@@ -1,0 +1,27 @@
+{
+  "nome": "Rotte d’incenso",
+  "url": "https://www.rottedincenso.it",
+  "email": "ciao@rottedincenso.it",
+  "telefono": "+39 333 123 4567",
+  "whatsapp_numero": "393331234567",
+  "instagram": "",
+  "web3forms_key": "INSERIRE-ACCESS-KEY",
+  "it": {
+    "slogan": "Viaggi lenti e autentici",
+    "descrizione_seo": "Rotte d’incenso disegna viaggi su misura, lenti e autentici: Sud-Est asiatico, Africa e rotte fuori dai circuiti di massa, con Laura Atzori.",
+    "claim_footer": "Organizziamo viaggi su misura per chi vuole esplorare il mondo in profondità, rispettando i tempi del luogo e le comunità che ci ospitano.",
+    "whatsapp_messaggio": "Ciao Laura, ho visitato Rotte d’incenso e mi piacerebbe parlarti di un viaggio che ho in mente.",
+    "cta_titolo": "Pronto a progettare il tuo viaggio?",
+    "cta_testo": "Prenota una prima chiamata conoscitiva gratuita di 30 minuti: capiamo insieme se il mio modo di viaggiare è anche il tuo.",
+    "cta_bottone": "Inizia da qui"
+  },
+  "en": {
+    "slogan": "Slow, authentic journeys",
+    "descrizione_seo": "Rotte d’incenso designs slow, authentic tailor-made journeys: South-East Asia, Africa and routes far from mass tourism, with Laura Atzori.",
+    "claim_footer": "We design tailor-made journeys for those who want to explore the world in depth, respecting the pace of each place and the communities that host us.",
+    "whatsapp_messaggio": "Hi Laura, I visited Rotte d’incenso and I would love to talk about a journey I have in mind.",
+    "cta_titolo": "Ready to design your journey?",
+    "cta_testo": "Book a free 30-minute introductory call: let’s find out together whether my way of travelling is also yours.",
+    "cta_bottone": "Start here"
+  }
+}

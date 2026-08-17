@@ -1,0 +1,36 @@
+<section class="pt-40 pb-xl px-sm md:px-lg text-center bg-base">
+<p class="font-label text-label uppercase tracking-widest text-on-surface-variant mb-sm">{{ sv.occhiello }}</p>
+<h1 class="font-h1 text-h1 text-on-surface mb-sm">{{ sv.titolo }}</h1>
+<p class="font-body text-body-lg text-on-surface-variant max-w-2xl mx-auto">{{ sv.sottotitolo }}</p>
+</section>
+<div class="w-full leading-none overflow-hidden bg-base">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#F2ECE3"></path>
+</svg>
+</div>
+<section class="bg-alt py-xl px-sm md:px-lg">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-lg">
+{%- for s in sv.lista %}
+<div class="bg-white rounded-xl p-lg shadow-sm flex flex-col">
+<div class="w-16 h-16 bg-cream rounded-xl flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-primary icon-lg">{{ s.icona }}</span>
+</div>
+<h2 class="font-h3 text-h3 text-on-surface mb-sm">{{ s.titolo }}</h2>
+<p class="font-body text-body text-on-surface-variant mb-md">{{ s.testo }}</p>
+<ul class="space-y-2 mb-md flex-grow">
+{%- for punto in s.punti %}
+<li class="flex items-center gap-xs font-body text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary icon-sm">check</span>{{ punto }}
+</li>
+{%- endfor %}
+</ul>
+<p class="font-label text-label uppercase tracking-wider text-primary">{{ s.prezzo }}</p>
+</div>
+{%- endfor %}
+</div>
+</section>
+<div class="w-full leading-none overflow-hidden bg-alt">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#FAF8F4"></path>
+</svg>
+</div>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{%- set t = ui[lang] -%}
+{%- set loc = sito[lang] -%}
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+{# ANTEPRIMA: rimuovere questa riga robots al lancio, insieme a src/robots.txt #}
+<meta content="noindex, nofollow, noarchive, noimageindex" name="robots"/>
+<title>{{ titolo_pagina }} — {{ sito.nome }}</title>
+<meta content="{{ descrizione or loc.descrizione_seo }}" name="description"/>
+<link href="{{ sito.url }}{{ page.url }}" rel="canonical"/>
+{%- if lang == 'it' %}
+<link href="{{ sito.url }}{{ page.url }}" hreflang="it" rel="alternate"/>
+<link href="{{ sito.url }}{{ alt_url }}" hreflang="en" rel="alternate"/>
+<link href="{{ sito.url }}{{ page.url }}" hreflang="x-default" rel="alternate"/>
+{%- else %}
+<link href="{{ sito.url }}{{ alt_url }}" hreflang="it" rel="alternate"/>
+<link href="{{ sito.url }}{{ page.url }}" hreflang="en" rel="alternate"/>
+<link href="{{ sito.url }}{{ alt_url }}" hreflang="x-default" rel="alternate"/>
+{%- endif %}
+<meta content="{{ titolo_pagina }} — {{ sito.nome }}" property="og:title"/>
+<meta content="{{ descrizione or loc.descrizione_seo }}" property="og:description"/>
+<meta content="{{ sito.url }}{{ page.url }}" property="og:url"/>
+<meta content="{{ sito.url }}/assets/img/og-image.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<link href="/assets/img/favicon.png" rel="icon" type="image/png"/>
+<link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="/assets/tailwind.css" rel="stylesheet"/>
+<link href="/assets/brand.css" rel="stylesheet"/>
+<script>window.SITO = { whatsappNumero: "{{ sito.whatsapp_numero }}", whatsappMessaggio: "{{ loc.whatsapp_messaggio }}" };</script>
+<script defer src="/assets/brand.js"></script>
+</head>
+<body class="bg-background text-on-background font-body antialiased overflow-x-hidden">
+<header class="fixed top-0 w-full z-50 bg-base/80 backdrop-blur-md shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-sm md:px-lg py-3 max-w-container-max mx-auto">
+<a class="flex items-center gap-xs hover:opacity-80 transition-opacity" href="{{ t.nav[0][1] }}">
+<img alt="{{ sito.nome }}" class="h-11 w-auto" src="/assets/img/logo-icona.png" width="248" height="527"/>
+<span class="wordmark text-primary">{{ sito.nome }}</span>
+</a>
+<nav class="hidden md:flex items-center space-x-md">
+{%- for voce in t.nav %}
+<a class="font-label text-label {% if attiva == loop.index0 %}text-primary font-bold border-b-2 border-primary pb-1{% else %}text-on-surface-variant hover:text-primary transition-colors{% endif %} tracking-wider uppercase" href="{{ voce[1] }}">{{ voce[0] }}</a>
+{%- endfor %}
+</nav>
+<div class="hidden md:flex items-center space-x-sm">
+<a aria-label="{{ 'Switch to English' if lang == 'it' else 'Passa all’italiano' }}" class="font-label text-label text-on-surface-variant hover:text-primary transition-colors tracking-wider uppercase" href="{{ alt_url }}">
+{{ 'EN' if lang == 'it' else 'IT' }}
+</a>
+<a class="bg-primary text-on-primary px-sm py-xs rounded hover:bg-olive-dark transition-all duration-300 font-label text-label uppercase tracking-wider shadow-sm hover:-translate-y-0.5 hover:shadow-md" href="{{ t.nav[3][1] }}">{{ t.prenota }}</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="{{ t.apri_menu }}" class="md:hidden text-primary p-xs -mr-xs" id="mobile-toggle" type="button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden border-t border-light-border bg-base/95 backdrop-blur-md" id="mobile-menu">
+<nav class="flex flex-col px-sm">
+{%- for voce in t.nav %}
+<a class="font-label text-label {% if attiva == loop.index0 %}text-primary font-bold{% else %}text-on-surface-variant hover:text-primary transition-colors{% endif %} tracking-wider uppercase py-sm border-b border-light-border/50" href="{{ voce[1] }}">{{ voce[0] }}</a>
+{%- endfor %}
+<a class="font-label text-label text-on-surface-variant tracking-wider uppercase py-sm border-b border-light-border/50" href="{{ alt_url }}">{{ 'English version' if lang == 'it' else 'Versione italiana' }}</a>
+<a class="my-md text-center bg-primary text-on-primary py-sm rounded font-label text-label uppercase tracking-wider" href="{{ t.nav[3][1] }}">{{ t.prenota }}</a>
+</nav>
+</div>
+</header>
+
+<main>
+{{ content | safe }}
+</main>
+
+{% if mostra_cta %}
+<section class="bg-base py-xl px-sm md:px-lg">
+<div class="max-w-container-max mx-auto">
+<div class="bg-[#A55C41] rounded-[20px] px-md md:px-xl py-xl grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
+<div class="md:col-span-8">
+<h2 class="font-h2 text-h2 text-white mb-sm">{{ loc.cta_titolo }}</h2>
+<p class="font-body text-body text-white max-w-xl">{{ loc.cta_testo }}</p>
+</div>
+<div class="md:col-span-4 flex md:justify-end">
+<a class="inline-flex items-center justify-center gap-xs bg-white text-[#8E5540] px-xl py-sm rounded-full font-label text-label uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300" href="{{ t.nav[3][1] }}">
+{{ loc.cta_bottone }}
+<span aria-hidden="true" class="material-symbols-outlined icon-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+{% endif %}
+
+<div class="w-full leading-none overflow-hidden {{ colore_pre_footer or 'bg-base' }}">
+<svg class="block w-full h-20 md:h-28 -mb-px" preserveAspectRatio="none" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22 L1440,100 L0,100 Z" fill="#4A5A3E"></path>
+<path d="M0,44 C260,4 480,2 720,38 C960,74 1180,86 1440,22" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+</svg>
+</div>
+<footer class="relative w-full text-on-primary bg-gradient-to-b from-olive-dark to-[#2B3524]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-sm md:px-lg pt-lg pb-lg max-w-container-max mx-auto font-body text-body">
+<div class="flex flex-col gap-sm md:pr-lg">
+<img alt="{{ sito.nome }}" class="h-24 w-auto self-start opacity-95" src="/assets/img/logo-completo-bianco.png" width="801" height="644"/>
+<p class="text-on-primary/80 text-body-sm mt-2">{{ loc.claim_footer }}</p>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label text-label uppercase tracking-wider mb-2">{{ t.naviga }}</span>
+{%- for voce in t.nav %}
+<a class="text-on-primary/80 hover:text-on-primary hover:translate-x-1 transition-transform duration-200" href="{{ voce[1] }}">{{ voce[0] }}</a>
+{%- endfor %}
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label text-label uppercase tracking-wider mb-2">{{ t.contatti }}</span>
+<a class="text-on-primary/80 hover:text-on-primary transition-colors flex items-center gap-xs" href="mailto:{{ sito.email }}">
+<span class="material-symbols-outlined icon-sm">mail</span>{{ sito.email }}
+</a>
+<a class="text-on-primary/80 hover:text-on-primary transition-colors flex items-center gap-xs" href="tel:{{ sito.telefono | replace(' ', '') }}">
+<span class="material-symbols-outlined icon-sm">call</span>{{ sito.telefono }}
+</a>
+{% if sito.instagram %}
+<div class="flex gap-sm mt-sm">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-colors" href="{{ sito.instagram }}" rel="noopener" target="_blank">
+<span class="font-label text-caption">IG</span>
+</a>
+</div>
+{% endif %}
+</div>
+</div>
+<div class="border-t border-on-primary/15 px-sm md:px-lg py-md max-w-container-max mx-auto w-full flex flex-col md:flex-row md:items-center md:justify-between gap-sm text-center md:text-left">
+<p class="font-label text-label text-on-primary/60 order-3 md:order-1">© 2026 {{ sito.nome }} — {{ t.diritti }}</p>
+<div class="flex flex-wrap justify-center gap-md order-2">
+<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.privacy }}</a>
+<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.cookie }}</a>
+<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.preferenze }}</a>
+</div>
+<p class="font-label text-label text-on-primary/60 order-1 md:order-3">Direzione tecnica ACT Travel S.r.l</p>
+</div>
+</footer>
+<a aria-label="{{ t.whatsapp_aria }}" id="whatsapp-fab" class="fixed bottom-sm right-sm md:bottom-lg md:right-lg z-50 bg-[#B8735A] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl ring-2 ring-white/70 hover:bg-[#9E5F49] hover:-translate-y-1 transition-all duration-300" href="#">
+<svg fill="currentColor" height="26" viewBox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.417-.415.833-.93.96-1.129.127-.198.063-.372-.026-.52-.089-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+</a>
+</body>
+</html>

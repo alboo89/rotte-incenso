@@ -1,0 +1,619 @@
+# =====================================================================
+# Backoffice Rotte d'incenso (Sveltia CMS)
+# Laura entra su /admin/, modifica i campi e salva: il sito si
+# ripubblica da solo. I contenuti vivono come file nel repository.
+# PRIMA DEL LANCIO: sostituire "alboo89/rotte-incenso" col repo vero.
+# Generato programmaticamente: per modifiche strutturali conviene rigenerarlo.
+# =====================================================================
+backend:
+  name: github
+  repo: alboo89/rotte-incenso
+  branch: main
+media_folder: src/assets/img
+public_folder: /assets/img
+locale: it
+collections:
+- name: impostazioni
+  label: Impostazioni del sito
+  files:
+  - name: sito
+    label: Contatti e testi generali
+    file: src/_data/sito.json
+    fields:
+    - name: nome
+      label: Nome del sito
+      widget: string
+    - name: url
+      label: Indirizzo del sito (per SEO)
+      widget: string
+    - name: email
+      label: Email
+      widget: string
+    - name: telefono
+      label: Telefono
+      widget: string
+    - name: whatsapp_numero
+      label: Numero WhatsApp (senza + e senza spazi, es. 393331234567)
+      widget: string
+    - name: instagram
+      label: Link Instagram (vuoto = icona nascosta)
+      widget: string
+      required: false
+    - name: web3forms_key
+      label: Chiave Web3Forms (tecnica, non toccare)
+      widget: string
+    - name: it
+      label: Testi in italiano
+      widget: object
+      fields:
+      - name: slogan
+        label: Slogan
+        widget: string
+      - name: descrizione_seo
+        label: Descrizione per i motori di ricerca
+        widget: text
+      - name: claim_footer
+        label: Frase nel footer
+        widget: text
+      - name: whatsapp_messaggio
+        label: Messaggio WhatsApp precompilato
+        widget: text
+      - name: cta_titolo
+        label: 'Invito finale: titolo'
+        widget: string
+      - name: cta_testo
+        label: 'Invito finale: testo'
+        widget: text
+      - name: cta_bottone
+        label: 'Invito finale: pulsante'
+        widget: string
+    - name: en
+      label: English texts
+      widget: object
+      fields:
+      - name: slogan
+        label: Slogan
+        widget: string
+      - name: descrizione_seo
+        label: SEO description
+        widget: text
+      - name: claim_footer
+        label: Footer sentence
+        widget: text
+      - name: whatsapp_messaggio
+        label: Pre-filled WhatsApp message
+        widget: text
+      - name: cta_titolo
+        label: 'Final call: title'
+        widget: string
+      - name: cta_testo
+        label: 'Final call: text'
+        widget: text
+      - name: cta_bottone
+        label: 'Final call: button'
+        widget: string
+- name: home
+  label: Home
+  files:
+  - name: home
+    label: Home (Italiano)
+    file: src/_data/home.json
+    fields:
+    - name: hero
+      label: Apertura
+      widget: object
+      fields:
+      - name: nome
+        label: Nome
+        widget: string
+      - name: ruolo
+        label: Sottotitolo
+        widget: string
+      - name: frase
+        label: Frase di apertura
+        widget: text
+      - name: foto
+        label: Foto ritratto
+        widget: image
+      - name: foto_alt
+        label: Descrizione foto (accessibilità)
+        widget: string
+    - name: storia
+      label: La mia storia
+      widget: object
+      fields:
+      - name: titolo
+        label: Titolo
+        widget: string
+      - name: foto
+        label: Foto
+        widget: image
+      - name: foto_alt
+        label: Descrizione foto
+        widget: string
+      - name: apertura
+        label: Paragrafi di apertura
+        widget: list
+        field:
+          name: p
+          label: Paragrafo
+          widget: text
+      - name: racconto
+        label: Racconto
+        widget: list
+        field:
+          name: p
+          label: Paragrafo
+          widget: text
+      - name: citazione
+        label: Citazione in evidenza
+        widget: string
+      - name: chiusura_citazione
+        label: Frase dopo la citazione
+        widget: text
+      - name: chiusura
+        label: Frase finale
+        widget: text
+    - name: valori
+      label: I miei valori
+      widget: object
+      fields:
+      - name: titolo
+        label: Titolo
+        widget: string
+      - name: sottotitolo
+        label: Sottotitolo
+        widget: string
+      - name: lista
+        label: Valori
+        widget: list
+        fields:
+        - name: icona
+          label: Icona (nome Material Symbols)
+          widget: string
+        - name: titolo
+          label: Titolo
+          widget: string
+        - name: testo
+          label: Testo
+          widget: text
+    - name: come_lavoriamo
+      label: Come lavoriamo insieme
+      widget: object
+      fields:
+      - name: titolo
+        label: Titolo
+        widget: string
+      - name: sottotitolo
+        label: Sottotitolo
+        widget: string
+      - name: passi
+        label: Passi
+        widget: list
+        fields:
+        - name: icona
+          label: Icona
+          widget: string
+        - name: titolo
+          label: Titolo
+          widget: string
+        - name: testo
+          label: Testo
+          widget: text
+    - name: faq
+      label: Domande frequenti
+      widget: object
+      fields:
+      - name: titolo
+        label: Titolo
+        widget: string
+      - name: domande
+        label: Domande
+        widget: list
+        fields:
+        - name: domanda
+          label: Domanda
+          widget: string
+        - name: risposta
+          label: Risposta
+          widget: text
+  - name: home_en
+    label: Home (English)
+    file: src/_data/home_en.json
+    fields:
+    - name: hero
+      label: Opening
+      widget: object
+      fields:
+      - name: nome
+        label: Name
+        widget: string
+      - name: ruolo
+        label: Subtitle
+        widget: string
+      - name: frase
+        label: Opening sentence
+        widget: text
+      - name: foto
+        label: Portrait photo
+        widget: image
+      - name: foto_alt
+        label: Photo description
+        widget: string
+    - name: storia
+      label: My story
+      widget: object
+      fields:
+      - name: titolo
+        label: Title
+        widget: string
+      - name: foto
+        label: Photo
+        widget: image
+      - name: foto_alt
+        label: Photo description
+        widget: string
+      - name: apertura
+        label: Opening paragraphs
+        widget: list
+        field:
+          name: p
+          label: Paragraph
+          widget: text
+      - name: racconto
+        label: Story
+        widget: list
+        field:
+          name: p
+          label: Paragraph
+          widget: text
+      - name: citazione
+        label: Highlighted quote
+        widget: string
+      - name: chiusura_citazione
+        label: Sentence after the quote
+        widget: text
+      - name: chiusura
+        label: Closing sentence
+        widget: text
+    - name: valori
+      label: My values
+      widget: object
+      fields:
+      - name: titolo
+        label: Title
+        widget: string
+      - name: sottotitolo
+        label: Subtitle
+        widget: string
+      - name: lista
+        label: Values
+        widget: list
+        fields:
+        - name: icona
+          label: Icon
+          widget: string
+        - name: titolo
+          label: Title
+          widget: string
+        - name: testo
+          label: Text
+          widget: text
+    - name: come_lavoriamo
+      label: How we work together
+      widget: object
+      fields:
+      - name: titolo
+        label: Title
+        widget: string
+      - name: sottotitolo
+        label: Subtitle
+        widget: string
+      - name: passi
+        label: Steps
+        widget: list
+        fields:
+        - name: icona
+          label: Icon
+          widget: string
+        - name: titolo
+          label: Title
+          widget: string
+        - name: testo
+          label: Text
+          widget: text
+    - name: faq
+      label: FAQ
+      widget: object
+      fields:
+      - name: titolo
+        label: Title
+        widget: string
+      - name: domande
+        label: Questions
+        widget: list
+        fields:
+        - name: domanda
+          label: Question
+          widget: string
+        - name: risposta
+          label: Answer
+          widget: text
+- name: destinazioni
+  label: Destinazioni
+  folder: src/destinazioni
+  create: true
+  extension: md
+  slug: '{{titolo | slugify}}'
+  fields:
+  - name: titolo
+    label: Nome
+    widget: string
+  - name: descrizione
+    label: Descrizione breve
+    widget: text
+  - name: titolo_en
+    label: Nome (inglese)
+    widget: string
+    required: false
+  - name: descrizione_en
+    label: Descrizione breve (inglese)
+    widget: text
+    required: false
+  - name: foto
+    label: Foto (se vuota appare il segnaposto colorato)
+    widget: image
+    required: false
+  - name: colore
+    label: Colore segnaposto (esadecimale)
+    widget: string
+    required: false
+  - name: icona
+    label: Icona segnaposto
+    widget: string
+    required: false
+  - name: ordine
+    label: Ordine in griglia
+    widget: number
+- name: servizi
+  label: Servizi
+  files:
+  - name: servizi
+    label: Servizi (Italiano)
+    file: src/_data/servizi.json
+    fields:
+    - name: occhiello
+      label: Occhiello
+      widget: string
+    - name: titolo
+      label: Titolo
+      widget: string
+    - name: sottotitolo
+      label: Sottotitolo
+      widget: text
+    - name: lista
+      label: Servizi
+      widget: list
+      fields:
+      - name: icona
+        label: Icona
+        widget: string
+      - name: titolo
+        label: Titolo
+        widget: string
+      - name: testo
+        label: Descrizione
+        widget: text
+      - name: punti
+        label: Punti elenco
+        widget: list
+        field:
+          name: p
+          label: Punto
+          widget: text
+      - name: prezzo
+        label: Prezzo
+        widget: string
+  - name: servizi_en
+    label: Servizi (English)
+    file: src/_data/servizi_en.json
+    fields:
+    - name: occhiello
+      label: Kicker
+      widget: string
+    - name: titolo
+      label: Title
+      widget: string
+    - name: sottotitolo
+      label: Subtitle
+      widget: text
+    - name: lista
+      label: Services
+      widget: list
+      fields:
+      - name: icona
+        label: Icon
+        widget: string
+      - name: titolo
+        label: Title
+        widget: string
+      - name: testo
+        label: Description
+        widget: text
+      - name: punti
+        label: Bullet points
+        widget: list
+        field:
+          name: p
+          label: Point
+          widget: text
+      - name: prezzo
+        label: Price
+        widget: string
+- name: contatti
+  label: Contatti
+  files:
+  - name: contatti
+    label: Contatti (Italiano)
+    file: src/_data/contatti.json
+    fields:
+    - name: titolo
+      label: Titolo
+      widget: string
+    - name: intro
+      label: Introduzione
+      widget: text
+    - name: location
+      label: Città
+      widget: string
+    - name: location_nota
+      label: Nota sotto la città
+      widget: string
+    - name: nota_risposta
+      label: Nota sui tempi di risposta
+      widget: text
+    - name: form_titolo
+      label: Titolo del form
+      widget: string
+    - name: stili_viaggio
+      label: Opzioni "Stile di viaggio"
+      widget: list
+      field:
+        name: s
+        label: Opzione
+        widget: string
+    - name: budget_opzioni
+      label: Opzioni "Budget"
+      widget: list
+      field:
+        name: b
+        label: Opzione
+        widget: string
+    - name: etichette
+      label: Etichette del form
+      widget: object
+      fields:
+      - name: nome
+        label: Campo nome
+        widget: string
+      - name: email
+        label: Campo email
+        widget: string
+      - name: telefono
+        label: Campo telefono
+        widget: string
+      - name: partecipanti
+        label: Campo partecipanti
+        widget: string
+      - name: stile
+        label: Campo stile
+        widget: string
+      - name: destinazione
+        label: Campo destinazione
+        widget: string
+      - name: durata
+        label: Campo durata
+        widget: string
+      - name: budget
+        label: Campo budget
+        widget: string
+      - name: messaggio
+        label: Campo messaggio
+        widget: string
+      - name: placeholder_destinazione
+        label: Esempio destinazione
+        widget: string
+      - name: placeholder_durata
+        label: Esempio durata
+        widget: string
+      - name: placeholder_messaggio
+        label: Esempio messaggio
+        widget: string
+      - name: seleziona
+        label: Testo "Seleziona..."
+        widget: string
+      - name: invia
+        label: Testo pulsante di invio
+        widget: string
+  - name: contatti_en
+    label: Contatti (English)
+    file: src/_data/contatti_en.json
+    fields:
+    - name: titolo
+      label: Title
+      widget: string
+    - name: intro
+      label: Introduction
+      widget: text
+    - name: location
+      label: City
+      widget: string
+    - name: location_nota
+      label: Note under the city
+      widget: string
+    - name: nota_risposta
+      label: Reply-time note
+      widget: text
+    - name: form_titolo
+      label: Form title
+      widget: string
+    - name: stili_viaggio
+      label: Travel style options
+      widget: list
+      field:
+        name: s
+        label: Option
+        widget: string
+    - name: budget_opzioni
+      label: Budget options
+      widget: list
+      field:
+        name: b
+        label: Option
+        widget: string
+    - name: etichette
+      label: Form labels
+      widget: object
+      fields:
+      - name: nome
+        label: Name field
+        widget: string
+      - name: email
+        label: Email field
+        widget: string
+      - name: telefono
+        label: Phone field
+        widget: string
+      - name: partecipanti
+        label: Travellers field
+        widget: string
+      - name: stile
+        label: Style field
+        widget: string
+      - name: destinazione
+        label: Destination field
+        widget: string
+      - name: durata
+        label: Duration field
+        widget: string
+      - name: budget
+        label: Budget field
+        widget: string
+      - name: messaggio
+        label: Message field
+        widget: string
+      - name: placeholder_destinazione
+        label: Destination example
+        widget: string
+      - name: placeholder_durata
+        label: Duration example
+        widget: string
+      - name: placeholder_messaggio
+        label: Message example
+        widget: string
+      - name: seleziona
+        label: '"Select..." text'
+        widget: string
+      - name: invia
+        label: Submit button text
+        widget: string
