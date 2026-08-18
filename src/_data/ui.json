@@ -31,7 +31,9 @@
     "diritti": "Tutti i diritti riservati",
     "privacy": "Privacy Policy",
     "cookie": "Cookie Policy",
-    "preferenze": "Preferenze cookie"
+    "preferenze": "Preferenze cookie",
+    "privacy_url": "/privacy.html",
+    "cookie_url": "/cookie-policy.html"
   },
   "en": {
     "nav": [
@@ -65,6 +67,8 @@
     "diritti": "All rights reserved",
     "privacy": "Privacy Policy",
     "cookie": "Cookie Policy",
-    "preferenze": "Cookie preferences"
+    "preferenze": "Cookie preferences",
+    "privacy_url": "/en/privacy.html",
+    "cookie_url": "/en/cookie-policy.html"
   }
 }

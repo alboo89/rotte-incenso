@@ -10,8 +10,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "tailwindcss": "^3.4.0",
+    "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/container-queries": "^0.1.1"
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "material-symbols": "^0.46.0"
   }
 }

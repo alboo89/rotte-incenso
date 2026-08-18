@@ -1,0 +1,16 @@
+<section class="bg-base py-xl px-sm md:px-lg pt-40">
+<div class="max-w-3xl mx-auto">
+<h1 class="font-h1 text-h1 text-primary mb-md">{{ titolo_pagina }}</h1>
+<p class="font-body text-body-sm text-on-surface-variant mb-lg">{{ aggiornata }}</p>
+<div class="space-y-lg">
+{% for sez in sezioni %}
+<div>
+<h2 class="font-h3 text-h3 text-primary mb-sm">{{ sez.t }}</h2>
+{% for p in sez.p %}
+<p class="font-body text-body text-on-surface-variant mb-sm">{{ p | safe }}</p>
+{% endfor %}
+</div>
+{% endfor %}
+</div>
+</div>
+</section>

@@ -26,10 +26,7 @@
 <meta content="website" property="og:type"/>
 <link href="/assets/img/favicon.png" rel="icon" type="image/png"/>
 <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="/assets/fonts.css" rel="stylesheet"/>
 <link href="/assets/tailwind.css" rel="stylesheet"/>
 <link href="/assets/brand.css" rel="stylesheet"/>
 <script>window.SITO = { whatsappNumero: "{{ sito.whatsapp_numero }}", whatsappMessaggio: "{{ loc.whatsapp_messaggio }}" };</script>
@@ -129,9 +126,8 @@
 <div class="border-t border-on-primary/15 px-sm md:px-lg py-md max-w-container-max mx-auto w-full flex flex-col md:flex-row md:items-center md:justify-between gap-sm text-center md:text-left">
 <p class="font-label text-label text-on-primary/60 order-3 md:order-1">© 2026 {{ sito.nome }} — {{ t.diritti }}</p>
 <div class="flex flex-wrap justify-center gap-md order-2">
-<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.privacy }}</a>
-<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.cookie }}</a>
-<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="#">{{ t.preferenze }}</a>
+<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="{{ t.privacy_url }}">{{ t.privacy }}</a>
+<a class="font-label text-label text-on-primary/60 hover:text-on-primary transition-colors" href="{{ t.cookie_url }}">{{ t.cookie }}</a>
 </div>
 <p class="font-label text-label text-on-primary/60 order-1 md:order-3">Direzione tecnica ACT Travel S.r.l</p>
 </div>

@@ -45,7 +45,12 @@ npm run build      genera il sito in _site/
 - Rimuovere le due righe `robots` in `src/_includes/base.njk` e il Disallow in `src/robots.txt`.
 - Sostituire i segnaposto: ritratti (`ritratto-laura.jpg`, `laura-taccuino.jpg`),
   foto delle destinazioni (dal CMS), numero di telefono e WhatsApp veri.
-- Privacy Policy, Cookie Policy e banner di consenso (i link nel footer sono ancora vuoti).
+- Privacy e Cookie Policy: le pagine ESISTONO (IT+EN, linkate nel footer) e il sito è
+  costruito per non usare cookie né tracker — font self-hosted, nessuna richiesta a
+  terzi al caricamento — quindi NON serve il banner di consenso. Da completare:
+  i dati del titolare nella Privacy Policy (nome, indirizzo, P.IVA di Laura, segnati
+  con [SEGNAPOSTO]) e una revisione legale del testo. Se in futuro si aggiungono
+  statistiche o marketing, servirà il banner.
 - Favicon e meta Open Graph.
 
 ## Bilingue
