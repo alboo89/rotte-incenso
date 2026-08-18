@@ -47,9 +47,9 @@ npm run build      genera il sito in _site/
   foto delle destinazioni (dal CMS), numero di telefono e WhatsApp veri.
 - Privacy e Cookie Policy: le pagine ESISTONO (IT+EN, linkate nel footer) e il sito è
   costruito per non usare cookie né tracker — font self-hosted, nessuna richiesta a
-  terzi al caricamento — quindi NON serve il banner di consenso. Da completare:
-  i dati del titolare nella Privacy Policy (nome, indirizzo, P.IVA di Laura, segnati
-  con [SEGNAPOSTO]) e una revisione legale del testo. Se in futuro si aggiungono
+  terzi al caricamento — quindi NON serve il banner di consenso. Titolare: Laura Atzori
+  (persona fisica, niente P.IVA da esporre finché lavora con ritenuta d'acconto).
+  Resta consigliata una revisione legale del testo prima del lancio. Se in futuro si aggiungono
   statistiche o marketing, servirà il banner.
 - Favicon e meta Open Graph.
 
