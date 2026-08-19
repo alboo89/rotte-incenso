@@ -46,10 +46,26 @@ h1, h2, h3, h4, .font-display, .font-h1, .font-h2, .font-h3, .font-h4, .font-quo
   }
 }
 
-/* Le icone Material non devono ereditare il peso del testo circostante */
+/* Icone Material: regola completa. Prima arrivava dal CSS di Google; ora che i
+   font sono self-hosted va dichiarata qui, font-family inclusa.
+   text-transform: none e' essenziale: le legature dei nomi icona sono minuscole,
+   e un contenitore in uppercase (es. la navbar) le spezzerebbe. */
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
   line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Icone: tre misure sole, invece dei quattro valori sparsi di prima */
