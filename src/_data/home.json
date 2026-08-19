@@ -30,8 +30,8 @@
     "lista": [
       {
         "icona": "hourglass_empty",
-        "titolo": "Lentezza",
-        "testo": "Ritmi dilatati per assaporare ogni istante, lontano dalla frenesia del turismo di massa."
+        "titolo": "Profondità",
+        "testo": "Il tempo di entrare davvero in un luogo, lontano dalla frenesia del turismo di massa."
       },
       {
         "icona": "favorite",
@@ -47,7 +47,7 @@
   },
   "come_lavoriamo": {
     "titolo": "Come Lavoriamo Insieme",
-    "sottotitolo": "Quattro passi, senza fretta, dal primo desiderio alla partenza.",
+    "sottotitolo": "Quattro passi, dal primo desiderio alla partenza.",
     "passi": [
       {
         "icona": "chat",
@@ -92,7 +92,7 @@
       },
       {
         "domanda": "Lavori con gruppi numerosi?",
-        "risposta": "Lavoro soprattutto con viaggiatori singoli, coppie e piccoli gruppi fino a 8 persone: è la dimensione che permette un viaggio davvero lento e rispettoso dei luoghi."
+        "risposta": "Lavoro soprattutto con viaggiatori singoli, coppie e piccoli gruppi fino a 8 persone: è la dimensione che permette un viaggio davvero attento e rispettoso dei luoghi."
       },
       {
         "domanda": "Offri assistenza durante il viaggio?",

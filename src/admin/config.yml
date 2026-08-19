@@ -176,7 +176,7 @@ collections:
           label: Icona
           widget: select
           options: &id001
-          - label: Clessidra (lentezza) — hourglass_empty
+          - label: Clessidra (profondità) — hourglass_empty
             value: hourglass_empty
           - label: Cuore (autenticità) — favorite
             value: favorite

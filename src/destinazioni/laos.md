@@ -1,8 +1,8 @@
 ---
 titolo: "Laos"
-descrizione: "Il paese più lento del Sud-est asiatico: fiumi, monasteri e villaggi che non hanno fretta di essere visitati."
+descrizione: "Fiumi, monasteri e villaggi rimasti ai margini delle rotte: il Sud-est asiatico più discreto."
 titolo_en: "Laos"
-descrizione_en: "The slowest country in South-East Asia: rivers, monasteries and villages in no hurry to be visited."
+descrizione_en: "Rivers, monasteries and villages left at the edge of the usual routes: South-East Asia at its most discreet."
 foto: ""
 colore: "#516442"
 icona: "temple_buddhist"
