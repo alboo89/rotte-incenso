@@ -27,10 +27,8 @@ for f in glob.glob('src/_data/*.json'):
     json_icone(json.load(open(f, encoding='utf-8')))
 icone |= {'menu', 'close'}  # impostate via JavaScript
 
-# 2) margine per il CMS: icone plausibili per un sito di viaggi, gia' pronte
-EXTRA = {'explore', 'hiking', 'sailing', 'beach_access', 'spa', 'coffee', 'public', 'map',
-         'schedule', 'star', 'groups', 'photo_camera', 'flight', 'train', 'directions_boat',
-         'nightlight', 'sunny', 'landscape', 'holiday_village', 'texture'}
+# 2) tutte le icone offerte dal CMS (src/_data/icone.json = fonte unica di verita')
+EXTRA = {i['nome'] for i in json.load(open('src/_data/icone.json', encoding='utf-8'))}
 icone |= EXTRA
 icone = sorted(icone)
 print(f"{len(icone)} icone nel subset:", ", ".join(icone))

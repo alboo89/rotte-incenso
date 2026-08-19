@@ -1,0 +1,182 @@
+[
+  {
+    "nome": "hourglass_empty",
+    "etichetta": "Clessidra (lentezza)"
+  },
+  {
+    "nome": "favorite",
+    "etichetta": "Cuore (autenticità)"
+  },
+  {
+    "nome": "eco",
+    "etichetta": "Foglia (sostenibilità)"
+  },
+  {
+    "nome": "spa",
+    "etichetta": "Fiore di loto"
+  },
+  {
+    "nome": "nightlight",
+    "etichetta": "Luna"
+  },
+  {
+    "nome": "sunny",
+    "etichetta": "Sole"
+  },
+  {
+    "nome": "chat",
+    "etichetta": "Fumetto (consulenza)"
+  },
+  {
+    "nome": "design_services",
+    "etichetta": "Righello (progettazione)"
+  },
+  {
+    "nome": "luggage",
+    "etichetta": "Valigia (preparazione)"
+  },
+  {
+    "nome": "flight_takeoff",
+    "etichetta": "Aereo in decollo (partenza)"
+  },
+  {
+    "nome": "explore",
+    "etichetta": "Bussola"
+  },
+  {
+    "nome": "handshake",
+    "etichetta": "Stretta di mano"
+  },
+  {
+    "nome": "map",
+    "etichetta": "Mappa"
+  },
+  {
+    "nome": "public",
+    "etichetta": "Globo"
+  },
+  {
+    "nome": "schedule",
+    "etichetta": "Orologio"
+  },
+  {
+    "nome": "star",
+    "etichetta": "Stella"
+  },
+  {
+    "nome": "groups",
+    "etichetta": "Gruppo di persone"
+  },
+  {
+    "nome": "photo_camera",
+    "etichetta": "Macchina fotografica"
+  },
+  {
+    "nome": "hiking",
+    "etichetta": "Trekking"
+  },
+  {
+    "nome": "sailing",
+    "etichetta": "Barca a vela"
+  },
+  {
+    "nome": "beach_access",
+    "etichetta": "Ombrellone"
+  },
+  {
+    "nome": "coffee",
+    "etichetta": "Caffè"
+  },
+  {
+    "nome": "restaurant",
+    "etichetta": "Ristorante (cucina)"
+  },
+  {
+    "nome": "terrain",
+    "etichetta": "Montagne (deserto, Atlante)"
+  },
+  {
+    "nome": "forest",
+    "etichetta": "Foresta"
+  },
+  {
+    "nome": "water",
+    "etichetta": "Acqua (fiumi, mare)"
+  },
+  {
+    "nome": "landscape",
+    "etichetta": "Paesaggio"
+  },
+  {
+    "nome": "temple_buddhist",
+    "etichetta": "Tempio buddhista"
+  },
+  {
+    "nome": "location_city",
+    "etichetta": "Città"
+  },
+  {
+    "nome": "holiday_village",
+    "etichetta": "Villaggio"
+  },
+  {
+    "nome": "texture",
+    "etichetta": "Tessuto"
+  },
+  {
+    "nome": "flight",
+    "etichetta": "Aereo"
+  },
+  {
+    "nome": "train",
+    "etichetta": "Treno"
+  },
+  {
+    "nome": "directions_boat",
+    "etichetta": "Traghetto"
+  },
+  {
+    "nome": "mail",
+    "etichetta": "Busta"
+  },
+  {
+    "nome": "phone",
+    "etichetta": "Telefono"
+  },
+  {
+    "nome": "call",
+    "etichetta": "Cornetta"
+  },
+  {
+    "nome": "location_on",
+    "etichetta": "Segnaposto"
+  },
+  {
+    "nome": "info",
+    "etichetta": "Informazione"
+  },
+  {
+    "nome": "check",
+    "etichetta": "Spunta"
+  },
+  {
+    "nome": "check_circle",
+    "etichetta": "Spunta in cerchio"
+  },
+  {
+    "nome": "expand_more",
+    "etichetta": "Freccia in giù"
+  },
+  {
+    "nome": "arrow_forward",
+    "etichetta": "Freccia avanti"
+  },
+  {
+    "nome": "menu",
+    "etichetta": "Menu (tre righe)"
+  },
+  {
+    "nome": "close",
+    "etichetta": "Chiudi (X)"
+  }
+]

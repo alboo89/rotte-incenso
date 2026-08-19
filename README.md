@@ -84,6 +84,26 @@ attuali sono una prima stesura da rivedere.
    non su "viaggi su misura vietnam" — se la SEO organica diventerà un canale,
    servirà una sezione di contenuti (il vecchio Journal, reintrodotto con criterio).
 
+## Guida per Laura
+
+`docs/Guida-backoffice-Rotte-dincenso.pdf` — 9 pagine: come funziona, accesso,
+modifica testi, fotografie, destinazioni, catalogo completo delle icone, bilingue
+e cosa fare se qualcosa va storto. Da rigenerare se cambiano le icone o il flusso:
+lo script sta in `scripts/` (vedi sotto).
+
+## Icone
+
+`src/_data/icone.json` è la fonte unica: alimenta il menu a tendina del CMS
+(Laura scegle da un elenco, non scrive nomi a mano) e il subset del font.
+Dopo averla modificata, rilanciare:
+
+```
+python3 scripts/subset-icone.py    # rigenera il font ridotto (richiede fonttools, brotli)
+```
+
+Lo script verifica 1:1 che ogni nome abbia la sua legatura: se un nome non esiste,
+si ferma invece di produrre un font incompleto.
+
 ## Cosa modifica Laura dal CMS
 
 Tutti i testi delle quattro pagine in entrambe le lingue, le foto (caricamento

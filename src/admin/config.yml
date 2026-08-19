@@ -173,8 +173,99 @@ collections:
         widget: list
         fields:
         - name: icona
-          label: Icona (nome Material Symbols)
-          widget: string
+          label: Icona
+          widget: select
+          options: &id001
+          - label: Clessidra (lentezza) — hourglass_empty
+            value: hourglass_empty
+          - label: Cuore (autenticità) — favorite
+            value: favorite
+          - label: Foglia (sostenibilità) — eco
+            value: eco
+          - label: Fiore di loto — spa
+            value: spa
+          - label: Luna — nightlight
+            value: nightlight
+          - label: Sole — sunny
+            value: sunny
+          - label: Fumetto (consulenza) — chat
+            value: chat
+          - label: Righello (progettazione) — design_services
+            value: design_services
+          - label: Valigia (preparazione) — luggage
+            value: luggage
+          - label: Aereo in decollo (partenza) — flight_takeoff
+            value: flight_takeoff
+          - label: Bussola — explore
+            value: explore
+          - label: Stretta di mano — handshake
+            value: handshake
+          - label: Mappa — map
+            value: map
+          - label: Globo — public
+            value: public
+          - label: Orologio — schedule
+            value: schedule
+          - label: Stella — star
+            value: star
+          - label: Gruppo di persone — groups
+            value: groups
+          - label: Macchina fotografica — photo_camera
+            value: photo_camera
+          - label: Trekking — hiking
+            value: hiking
+          - label: Barca a vela — sailing
+            value: sailing
+          - label: Ombrellone — beach_access
+            value: beach_access
+          - label: Caffè — coffee
+            value: coffee
+          - label: Ristorante (cucina) — restaurant
+            value: restaurant
+          - label: Montagne (deserto, Atlante) — terrain
+            value: terrain
+          - label: Foresta — forest
+            value: forest
+          - label: Acqua (fiumi, mare) — water
+            value: water
+          - label: Paesaggio — landscape
+            value: landscape
+          - label: Tempio buddhista — temple_buddhist
+            value: temple_buddhist
+          - label: Città — location_city
+            value: location_city
+          - label: Villaggio — holiday_village
+            value: holiday_village
+          - label: Tessuto — texture
+            value: texture
+          - label: Aereo — flight
+            value: flight
+          - label: Treno — train
+            value: train
+          - label: Traghetto — directions_boat
+            value: directions_boat
+          - label: Busta — mail
+            value: mail
+          - label: Telefono — phone
+            value: phone
+          - label: Cornetta — call
+            value: call
+          - label: Segnaposto — location_on
+            value: location_on
+          - label: Informazione — info
+            value: info
+          - label: Spunta — check
+            value: check
+          - label: Spunta in cerchio — check_circle
+            value: check_circle
+          - label: Freccia in giù — expand_more
+            value: expand_more
+          - label: Freccia avanti — arrow_forward
+            value: arrow_forward
+          - label: Menu (tre righe) — menu
+            value: menu
+          - label: Chiudi (X) — close
+            value: close
         - name: titolo
           label: Titolo
           widget: string
@@ -197,7 +288,8 @@ collections:
         fields:
         - name: icona
           label: Icona
-          widget: string
+          widget: select
+          options: *id001
         - name: titolo
           label: Titolo
           widget: string
@@ -296,7 +388,8 @@ collections:
         fields:
         - name: icona
           label: Icon
-          widget: string
+          widget: select
+          options: *id001
         - name: titolo
           label: Title
           widget: string
@@ -319,7 +412,8 @@ collections:
         fields:
         - name: icona
           label: Icon
-          widget: string
+          widget: select
+          options: *id001
         - name: titolo
           label: Title
           widget: string
@@ -374,8 +468,8 @@ collections:
     required: false
   - name: icona
     label: Icona segnaposto
-    widget: string
-    required: false
+    widget: select
+    options: *id001
   - name: ordine
     label: Ordine in griglia
     widget: number
@@ -401,7 +495,8 @@ collections:
       fields:
       - name: icona
         label: Icona
-        widget: string
+        widget: select
+        options: *id001
       - name: titolo
         label: Titolo
         widget: string
@@ -437,7 +532,8 @@ collections:
       fields:
       - name: icona
         label: Icon
-        widget: string
+        widget: select
+        options: *id001
       - name: titolo
         label: Title
         widget: string
