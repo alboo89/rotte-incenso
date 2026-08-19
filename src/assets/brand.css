@@ -33,6 +33,17 @@ h1, h2, h3, h4, .font-display, .font-h1, .font-h2, .font-h3, .font-h4, .font-quo
   line-height: 1;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  /* rame del logo (campionato da logo-completo.png): ripiego pieno... */
+  color: #976848;
+}
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  /* ...ed effetto cangiante: gradiente metallico ritagliato nelle lettere */
+  .wordmark {
+    background: linear-gradient(118deg, #976848 0%, #B3896B 32%, #C7AA93 52%, #A87D5C 74%, #976848 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 /* Le icone Material non devono ereditare il peso del testo circostante */
