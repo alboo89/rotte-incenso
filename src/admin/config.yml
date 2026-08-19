@@ -42,6 +42,10 @@ collections:
     - name: web3forms_key
       label: Chiave Web3Forms (tecnica, non toccare)
       widget: string
+    - name: umami_website_id
+      label: ID sito Umami (statistiche; vuoto = spente)
+      widget: string
+      required: false
     - name: it
       label: Testi in italiano
       widget: object

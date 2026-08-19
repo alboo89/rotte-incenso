@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         '<p class="font-body text-body-sm text-on-surface-variant">Il messaggio è già pronto: puoi mandarlo così o farlo tuo. Si aprirà WhatsApp con il testo inserito.</p>' +
         '<label class="font-label text-micro uppercase tracking-wider text-on-surface-variant" for="wa-text">Il tuo messaggio</label>' +
         '<textarea class="w-full border border-light-border rounded-lg p-sm font-body text-body-sm text-on-surface focus:border-primary focus:ring-primary" id="wa-text" rows="4"></textarea>' +
-        '<a class="flex items-center justify-center gap-xs w-full text-center text-white py-sm rounded-lg font-label text-label uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg" href="#" id="wa-send" rel="noopener" style="background:#25D366" target="_blank">' +
+        '<a class="flex items-center justify-center gap-xs w-full text-center text-white py-sm rounded-lg font-label text-label uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg" data-umami-event="whatsapp_invia" href="#" id="wa-send" rel="noopener" style="background:#25D366" target="_blank">' +
           '<span>Apri WhatsApp</span>' +
           '<span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span>' +
         '</a>' +
