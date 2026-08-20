@@ -1,11 +1,12 @@
 {
-  "nome": "Rotte d’incenso",
+  "nome": "Rotte d’Incenso",
   "url": "https://www.rottedincenso.it",
   "email": "info@rottedincenso.it",
   "telefono": "+39 333 626 1680",
   "whatsapp_numero": "393336261680",
   "instagram": "https://www.instagram.com/rottedincenso",
   "web3forms_key": "1242372b-4500-44a1-b388-a08e2dd65311",
+  "umami_website_id": "",
   "it": {
     "slogan": "Viaggi autentici, su misura",
     "descrizione_seo": "Rotte d’incenso disegna viaggi su misura e autentici: Sud-Est asiatico, Africa e rotte fuori dai circuiti di massa, con Laura Atzori.",
@@ -23,6 +24,5 @@
     "cta_titolo": "Ready to design your journey?",
     "cta_testo": "Book a free 30-minute introductory call: let’s find out together whether my way of travelling is also yours.",
     "cta_bottone": "Start here"
-  },
-  "umami_website_id": ""
+  }
 }
