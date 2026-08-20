@@ -1,10 +1,10 @@
 {
   "hero": {
     "nome": "Laura Atzori",
-    "ruolo": "Chi c’è dietro Rotte d’incenso",
+    "ruolo": "Chi c’è dietro Rotte d’Incenso",
     "frase": "Il viaggio è la mia ribellione alla routine, il rifugio dove la mia parte sognatrice trova lo spazio per esprimersi.",
     "foto": "/assets/img/ritratto-laura.jpg",
-    "foto_alt": "Laura Atzori, fondatrice di Rotte d’incenso, ritratta in luce naturale"
+    "foto_alt": "Laura Atzori, fondatrice di Rotte d’Incenso, ritratta in luce naturale"
   },
   "storia": {
     "titolo": "La Mia Storia",
@@ -17,12 +17,11 @@
     "racconto": [
       "Ho una predilezione naturale per le latitudini equatoriali, per le terre calde dove l’aria si fa densa e profuma di spezie e memoria. Dal cuore del Sud-Est Asiatico alle cime del Nepal, fino alle luci d’Africa, tra il rosso del Marocco e la vastità delle pianure del Kenya e della Tanzania: sono questi i luoghi in cui mi sento davvero a casa.",
       "Rotte d’incenso nasce da una tendenza precisa: quella per i luoghi in cui si respira una spiritualità autentica, lontana dai ritmi del mondo occidentale. Ho una nostalgia sincera per le atmosfere di un tempo, per quegli angoli di pianeta che custodiscono tradizioni antiche e ritmi umani.",
-      "Un’ispirazione che parte da lontano, nata anche divorando i libri di Tiziano Terzani, che mi ha insegnato a guardare all’Asia e al mondo con rispetto, lentezza, curiosità e nostalgia.",
-      "Una sera, parlando di viaggi con un’amica, lei mi ha chiesto: «E l’America Latina quando?». Le ho risposto che l’America Latina la progetto volentieri per chi me la chiede, ma che il mio naso continua a seguire l’odore dell’incenso, e quello riporta sempre nella stessa direzione. Mi ha guardata con un sorriso e mi ha detto:"
+      "Progetto itinerari in tutto il mondo, ma il mio istinto segue le rotte dell'incenso, verso l'Asia. È un legame che parte da lontano, nato tra le pagine di Tiziano Terzani. Essere stata definita, con un sorriso, una sua 'figlia' è un complimento che accolgo con orgoglio: da lui ho imparato che viaggiare non è solo spostarsi, è anche immergersi nei ritmi, nelle contraddizioni e nella verità nuda di un territorio, che non sempre è facile da capire o da condividere."
     ],
-    "citazione": "Eh, sei proprio figlia di Terzani!",
-    "chiusura_citazione": "Mi sono commossa: credo che una frase del genere mi abbia definita alla perfezione.",
-    "chiusura": "Non creo itinerari in serie. Costruisco percorsi per chi vuole capire a fondo una destinazione: vivendo la vera quotidianità del posto, rispettando l'ambiente e portando a casa un'esperienza vera."
+    "citazione": "\"Viaggiare è una scuola di umiltà, fa toccare con mano i limiti della propria comprensione.\"",
+    "chiusura_citazione": "Ed è esattamente questa l'umiltà che metto al centro del mio lavoro.",
+    "chiusura": "Non creo itinerari in serie e non progetto vacanze per chi vuole trovare tutto come a casa propria, ma viaggi per chi ha voglia di capire e di vivere la quotidianità di un posto, rispettando l'ambiente e portando a casa un'esperienza vera."
   },
   "valori": {
     "titolo": "I Miei Valori",
