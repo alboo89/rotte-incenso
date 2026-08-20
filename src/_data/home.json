@@ -79,7 +79,7 @@
       },
       {
         "domanda": "Prenoti anche i voli?",
-        "risposta": "Mi occupo principalmente della progettazione dell’itinerario a terra (alloggi, esperienze, trasporti interni). Posso consigliarti le migliori opzioni di volo, ma la prenotazione dei voli internazionali resta a tuo carico per maggiore flessibilità."
+        "risposta": "Si, se preferisci.\nNel caso in cui invece preferissi una maggiore autonomia, posso occuparmi dei servizi in loco, ma la prenotazione dei voli internazionali resterebbe a tuo carico."
       },
       {
         "domanda": "Quanto costano i tuoi viaggi?",
@@ -91,11 +91,11 @@
       },
       {
         "domanda": "Lavori con gruppi numerosi?",
-        "risposta": "Lavoro soprattutto con viaggiatori singoli, coppie e piccoli gruppi  sui viaggi su misura.  Per quanto riguarda i viaggi di gruppo lavoro con gruppi da 6 fino a 10 persone: è la dimensione che permette un viaggio davvero attento e rispettoso dei luoghi."
+        "risposta": "Lavoro soprattutto con viaggiatori singoli, coppie e piccoli gruppi sui viaggi su misura. Per quanto riguarda i viaggi di gruppo invece, lavoro con gruppi da 6 fino a 10 persone: è la dimensione che permette un viaggio davvero attento e rispettoso dei luoghi."
       },
       {
         "domanda": "Offri assistenza durante il viaggio?",
-        "risposta": "Sì. Resto raggiungibile per tutta la durata del viaggio come punto di riferimento, e hai sempre i contatti diretti dei referenti locali."
+        "risposta": "Sì. Resto raggiungibile per la durata del viaggio come punto di riferimento."
       }
     ]
   }
