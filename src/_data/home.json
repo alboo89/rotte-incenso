@@ -29,18 +29,18 @@
     "lista": [
       {
         "icona": "hourglass_empty",
-        "titolo": "Profondità",
-        "testo": "Il tempo di entrare davvero in un luogo, lontano dalla frenesia del turismo di massa."
+        "titolo": "Rispetto",
+        "testo": "Adattare i nostri passi ai ritmi dei luoghi che visitiamo e non il contrario. Significa accogliere usanze e mentalità diverse senza pretese né giudizi, con la consapevolezza di essere sempre degli ospiti"
       },
       {
         "icona": "favorite",
         "titolo": "Immersione Culturale",
-        "testo": "L'obiettivo è farvi vivere i posti da vicino e cercare la vibrante realtà quotidiana di una cultura, evitando esotismi forzati e messe in scena per turisti poco spontanee.\nUn esempio pratico: preferisco portarvi al mercato dove gli abitanti fanno la spesa ogni mattina, per farvi mangiare negli stessi posti in cui mangiano loro e magari scambiarci qualche parola o condividere un momento insieme in naturalezza."
+        "testo": "L'obiettivo è farvi vivere i posti da vicino e cercare la vibrante realtà quotidiana di una cultura, evitando esotismi forzati e messe in scena poco spontanee per turisti."
       },
       {
         "icona": "eco",
         "titolo": "Etica e Conservazione",
-        "testo": "Un impatto gentile  sui territori che visitiamo, scegliendo un'osservazione della natura e della fauna totalmente non intrusiva e realtà che tutelano ecosistemi fragili e che sostengono le comunità locali trasformando alcuni momenti del viaggio in un aiuto concreto."
+        "testo": "Un impatto gentile  sui territori che visitiamo, scegliendo un'osservazione della natura e della fauna totalmente non intrusiva e realtà che tutelano ecosistemi fragili e sostengono le comunità locali, trasformando alcuni momenti del viaggio in un aiuto concreto."
       }
     ]
   },
