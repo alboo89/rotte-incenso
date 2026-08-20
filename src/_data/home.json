@@ -30,7 +30,7 @@
       {
         "icona": "hourglass_empty",
         "titolo": "Rispetto",
-        "testo": "Adattare i nostri passi ai ritmi dei luoghi che visitiamo e non il contrario. Significa accogliere usanze e mentalità diverse senza pretese né giudizi, con la consapevolezza di essere sempre degli ospiti"
+        "testo": "Adattare i nostri passi ai ritmi dei luoghi che visitiamo e non il contrario. \nSignifica accogliere usanze e mentalità diverse senza pretese né giudizi, con la consapevolezza di essere sempre degli ospiti."
       },
       {
         "icona": "favorite",
@@ -40,7 +40,7 @@
       {
         "icona": "eco",
         "titolo": "Etica e Conservazione",
-        "testo": "Un impatto gentile  sui territori che visitiamo, scegliendo un'osservazione della natura e della fauna totalmente non intrusiva e realtà che tutelano ecosistemi fragili e sostengono le comunità locali, trasformando alcuni momenti del viaggio in un aiuto concreto."
+        "testo": "Un impatto gentile  sui territori che visitiamo, scegliendo un'osservazione della natura e della fauna totalmente non intrusiva e realtà che tutelino ecosistemi fragili e sostengano le comunità locali."
       }
     ]
   },
@@ -49,24 +49,24 @@
     "sottotitolo": "Quattro passi, dal primo desiderio alla partenza.",
     "passi": [
       {
-        "icona": "chat",
-        "titolo": "Consulenza",
-        "testo": "Un primo incontro per capire i tuoi desideri e il tuo stile di viaggio ideale."
+        "icona": "call",
+        "titolo": "Consulenza Gratuita",
+        "testo": "Una prima chiamata conoscitiva gratuita per capire i tuoi desideri, le tue idee e il tuo stile di viaggio ideale."
       },
       {
         "icona": "design_services",
         "titolo": "Progettazione",
-        "testo": "Creazione di un itinerario su misura, selezionando esperienze autentiche."
+        "testo": "Creazione di una bozza di itinerario disegnato apposta per te, che possiamo vedere e modificare insieme sulla base del tuo budget e delle tue esigenze."
       },
       {
         "icona": "luggage",
         "titolo": "Preparazione",
-        "testo": "Ti forniamo tutti i documenti, i consigli e i contatti locali necessari."
+        "testo": "Stesura dell'itinerario definitivo approvato da te, conferma e invio di tutti i documenti e i consigli necessari."
       },
       {
         "icona": "flight_takeoff",
         "titolo": "Avventura",
-        "testo": "Parti senza pensieri, con assistenza garantita durante tutto il percorso."
+        "testo": "Prepara i bagagli e parti senza pensieri, penso a tutto io."
       }
     ]
   },
