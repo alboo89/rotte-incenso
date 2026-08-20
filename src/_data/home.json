@@ -2,7 +2,7 @@
   "hero": {
     "nome": "Laura Atzori",
     "ruolo": "Chi c’è dietro Rotte d’incenso",
-    "frase": "Il viaggio non è una semplice evasione: è il mio modo di sentirmi viva.",
+    "frase": "Il viaggio è la mia ribellione alla routine, il rifugio dove la mia parte sognatrice trova lo spazio per esprimersi.",
     "foto": "/assets/img/ritratto-laura.jpg",
     "foto_alt": "Laura Atzori, fondatrice di Rotte d’incenso, ritratta in luce naturale"
   },
@@ -11,7 +11,7 @@
     "foto": "/assets/img/laura-taccuino.jpg",
     "foto_alt": "Laura mentre scrive appunti di viaggio su un taccuino",
     "apertura": [
-      "Mi chiamo Laura, sono nata in Sardegna nel 1989 e il viaggio non è una semplice evasione: è il mio modo di sentirmi viva.",
+      "Mi chiamo Laura, sono nata in Sardegna nel 1989 e il viaggio è il luogo dove i miei sogni smettono di essere soltanto sogni.",
       "La mia passione per i viaggi si è trasformata in un’attività quando ho deciso di completare il corso da Travel Designer. È stata un’esperienza bellissima che mi ha permesso di ampliare la mia passione, arricchendola della competenza tecnica richiesta per l’organizzazione pratica di ogni itinerario."
     ],
     "racconto": [
@@ -20,9 +20,9 @@
       "Un’ispirazione che parte da lontano, nata anche divorando i libri di Tiziano Terzani, che mi ha insegnato a guardare all’Asia e al mondo con rispetto, lentezza, curiosità e nostalgia.",
       "Una sera, parlando di viaggi con un’amica, lei mi ha chiesto: «E l’America Latina quando?». Le ho risposto che l’America Latina la progetto volentieri per chi me la chiede, ma che il mio naso continua a seguire l’odore dell’incenso, e quello riporta sempre nella stessa direzione. Mi ha guardata con un sorriso e mi ha detto:"
     ],
-    "citazione": "«Eh, tu sei proprio figlia di Terzani!»",
+    "citazione": "Eh, sei proprio figlia di Terzani!",
     "chiusura_citazione": "Mi sono commossa: credo che una frase del genere mi abbia definita alla perfezione.",
-    "chiusura": "Non creo itinerari in serie. Disegno percorsi per chi cerca un viaggio che sia incontro, sguardo profondo e riconnessione con la bellezza autentica del mondo."
+    "chiusura": "Non creo itinerari in serie. Costruisco percorsi per chi vuole capire a fondo una destinazione: vivendo la vera quotidianità del posto, rispettando l'ambiente e portando a casa un'esperienza vera."
   },
   "valori": {
     "titolo": "I Miei Valori",
