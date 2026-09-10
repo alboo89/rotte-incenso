@@ -1,6 +1,6 @@
 {
   "titolo": "Iniziamo a Parlare",
-  "intro": "Contattami per una consulenza iniziale gratuita di 30 minuti. Scopriremo insieme se il mio modo di viaggiare è in sintonia con i tuoi sogni di viaggio.",
+  "intro": "Contattami per una consulenza iniziale gratuita di 30-45 minuti. Scopriremo insieme se il mio modo di viaggiare è in sintonia con i tuoi sogni di viaggio.",
   "location": "Cagliari, Italia",
   "location_nota": "Disponibile per call online ovunque",
   "nota_risposta": "Risponderò alla tua richiesta entro 48 ore lavorative per organizzare la nostra prima call conoscitiva.",
@@ -13,9 +13,8 @@
     "Mix di tutto"
   ],
   "budget_opzioni": [
-    "2.000€ - 4.000€ a persona",
-    "4.000€ - 8.000€ a persona",
-    "8.000€+ a persona"
+    "1.500€ - 2.500€ a persona",
+    "2.000€ - 4.000€ a persona"
   ],
   "etichette": {
     "nome": "Nome Completo *",
