@@ -2,7 +2,6 @@
 # Backoffice Rotte d'incenso (Sveltia CMS)
 # Laura entra su /admin/, modifica i campi e salva: il sito si
 # ripubblica da solo. I contenuti vivono come file nel repository.
-# PRIMA DEL LANCIO: sostituire "alboo89/rotte-incenso" col repo vero.
 # Generato programmaticamente: per modifiche strutturali conviene rigenerarlo.
 # =====================================================================
 backend:
@@ -437,6 +436,33 @@ collections:
         - name: risposta
           label: Answer
           widget: text
+- name: pagina_destinazioni
+  label: Destinazioni — testo introduttivo
+  files:
+  - name: intro
+    label: Titolo e introduzione della pagina
+    file: src/_data/pagina_destinazioni.json
+    fields:
+    - name: it
+      label: Testi in italiano
+      widget: object
+      fields:
+      - name: titolo
+        label: Titolo della pagina
+        widget: string
+      - name: intro
+        label: Frase introduttiva
+        widget: text
+    - name: en
+      label: English texts
+      widget: object
+      fields:
+      - name: titolo
+        label: Page title
+        widget: string
+      - name: intro
+        label: Intro sentence
+        widget: text
 - name: destinazioni
   label: Destinazioni
   folder: src/destinazioni
