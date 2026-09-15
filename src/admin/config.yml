@@ -437,10 +437,10 @@ collections:
           label: Answer
           widget: text
 - name: pagina_destinazioni
-  label: Destinazioni — testo introduttivo
+  label: Testo pagina Destinazioni
   files:
   - name: intro
-    label: Titolo e introduzione della pagina
+    label: Titolo e introduzione
     file: src/_data/pagina_destinazioni.json
     fields:
     - name: it

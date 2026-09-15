@@ -30,8 +30,7 @@ npm run build      genera il sito in _site/
 
 1. Creare un repository GitHub e caricare questa cartella.
 2. In `src/admin/config.yml` sostituire `IL-TUO-UTENTE/IL-TUO-REPO` col nome vero del repo.
-3. Collegare il repo a Netlify (o Cloudflare Pages): build `npm run build`, publish `_site`.
-   Con Netlify il file `netlify.toml` configura già tutto.
+3. Collegare il repo a Netlify e impostare la pubblicazione (vedi «Pubblicazione»).
 4. Registrarsi su web3forms.com (gratis), ottenere la Access Key e inserirla
    dal CMS in Impostazioni → Chiave Web3Forms. Le richieste del form arrivano
    via email a Laura.
@@ -39,6 +38,29 @@ npm run build      genera il sito in _site/
    (Settings → Developer settings) e configurarla su Netlify
    (Site settings → Access control → OAuth). Laura entra su /admin/ col suo
    account GitHub (da invitare come collaboratore del repo).
+
+## Pubblicazione
+
+Il sito **non viene compilato da Netlify**: lo compila GitHub Actions
+(`.github/workflows/deploy.yml`) e poi carica su Netlify la cartella `_site` già
+pronta. Netlify si limita a servirla, quindi non consuma minuti di build — che sul
+piano gratuito sono 300 al mese ed erano il collo di bottiglia, visto che ogni
+salvataggio di Laura dal CMS ne bruciava una fetta. Actions è invece illimitato
+sui repository pubblici.
+
+Perché funzioni servono, una tantum:
+
+1. Su Netlify, un token personale (User settings → Applications → New access token)
+   e l'ID del progetto (Project configuration → Project ID).
+2. Su GitHub, Settings → Secrets and variables → Actions, due segreti:
+   `NETLIFY_AUTH_TOKEN` e `NETLIFY_SITE_ID`.
+3. Sempre su Netlify, **disattivare le build automatiche** (Project configuration →
+   Build & deploy → Stop builds): altrimenti partono in parallelo e consumano minuti
+   per un lavoro che è già stato fatto.
+
+Da lì in poi ogni push su `main` — anche quelli generati dai salvataggi di Laura —
+ricostruisce e ripubblica il sito da solo. Per ripubblicare a mano senza modifiche:
+tab Actions → «Pubblica il sito» → Run workflow.
 
 ## Al lancio, da ricordare
 
@@ -89,12 +111,20 @@ attuali sono una prima stesura da rivedere.
 `docs/Guida-backoffice-Rotte-dincenso.pdf` — 9 pagine: come funziona, accesso,
 modifica testi, fotografie, destinazioni, catalogo completo delle icone, bilingue
 e cosa fare se qualcosa va storto. Da rigenerare se cambiano le icone o il flusso:
-lo script sta in `scripts/` (vedi sotto).
+
+```
+python3 scripts/genera-guida-pdf.py    # richiede reportlab, fonttools, brotli
+```
+
+Il catalogo delle icone nella guida si costruisce da `src/_data/icone.json`, quindi
+resta allineato al menu del CMS da solo. Lo script pesca i font dal repository e i
+codepoint delle icone da `node_modules` (serve `npm install`), perché ReportLab non
+applica le legature OpenType: scrivere «favorite» stamperebbe la parola, non l'icona.
 
 ## Icone
 
 `src/_data/icone.json` è la fonte unica: alimenta il menu a tendina del CMS
-(Laura scegle da un elenco, non scrive nomi a mano) e il subset del font.
+(Laura sceglie da un elenco, non scrive nomi a mano) e il subset del font.
 Dopo averla modificata, rilanciare:
 
 ```

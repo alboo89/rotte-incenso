@@ -1,0 +1,65 @@
+# =====================================================================
+# Build e pubblicazione del sito Rotte d'incenso.
+#
+# Il sito viene compilato QUI (GitHub Actions, illimitato sui repository
+# pubblici) e caricato su Netlify già pronto. Netlify non accende la sua
+# buildbot, quindi questo deploy non consuma i minuti di build del piano.
+#
+# Perché funzioni servono due segreti del repository
+# (Settings -> Secrets and variables -> Actions):
+#   NETLIFY_AUTH_TOKEN  token personale creato su Netlify
+#   NETLIFY_SITE_ID     ID del sito (Netlify -> Project configuration)
+# e le build automatiche di Netlify vanno disattivate, altrimenti
+# ripartirebbero in parallelo consumando minuti.
+# =====================================================================
+name: Pubblica il sito
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # permette di ripubblicare a mano dalla tab Actions
+
+# Laura può salvare più modifiche di fila dal CMS: teniamo solo l'ultima.
+concurrency:
+  group: deploy-produzione
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il repository
+        uses: actions/checkout@v4
+
+      - name: Prepara Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Compila il sito
+        run: npm run build
+
+      - name: Controlla che la build non sia vuota
+        run: |
+          test -s _site/index.html || { echo "Build fallita: manca _site/index.html"; exit 1; }
+          test -s _site/assets/tailwind.css || { echo "Build fallita: manca il CSS"; exit 1; }
+
+      - name: Pubblica su Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          # via variabile d'ambiente: il messaggio di commit è testo
+          # arbitrario e non deve finire dentro la riga di comando
+          MESSAGGIO: ${{ github.event.head_commit.message }}
+        run: |
+          npx --yes netlify-cli@27 deploy \
+            --prod \
+            --dir=_site \
+            --message "${MESSAGGIO:-Pubblicazione manuale}"
