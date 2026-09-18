@@ -1,6 +1,6 @@
 {
   "titolo": "Let’s Talk",
-  "intro": "Get in touch for a free 30-minute initial consultation. Together we’ll find out whether my way of travelling is in tune with your travel dreams.",
+  "intro": "Get in touch for a free 30-45 minute initial consultation. Together we’ll find out whether my way of travelling is in tune with your travel dreams.",
   "location": "Cagliari, Italy",
   "location_nota": "Available for online calls anywhere",
   "nota_risposta": "I will reply to your request within 48 working hours to arrange our first introductory call.",
@@ -9,13 +9,12 @@
     "Off-the-beaten-track adventure",
     "Culture and spirituality",
     "Nature and trekking",
-    "Local food and wine",
     "A mix of everything"
   ],
   "budget_opzioni": [
-    "€2,000 - €4,000 per person",
-    "€4,000 - €8,000 per person",
-    "€8,000+ per person"
+    "€1.500 - €2.500 per person",
+    "€2.000 - €3.500 per person",
+    "€3.000 - €4.000 per person"
   ],
   "etichette": {
     "nome": "Full Name *",
