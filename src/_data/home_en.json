@@ -52,22 +52,22 @@
       {
         "icona": "chat",
         "titolo": "Consultation",
-        "testo": "A first meeting to understand your wishes and your ideal travel style."
+        "testo": "A free introductory call to chat about your vision, your desires, and your perfect way to travel."
       },
       {
         "icona": "design_services",
         "titolo": "Design",
-        "testo": "A tailor-made itinerary, built around authentic experiences."
+        "testo": "Creation of a custom draft itinerary designed just for you, which we can review and adjust together based on your budget and needs."
       },
       {
         "icona": "luggage",
         "titolo": "Preparation",
-        "testo": "You receive all the documents, advice and local contacts you need."
+        "testo": "Finalization of the approved itinerary, booking confirmation, and delivery of all essential travel documents and tips."
       },
       {
         "icona": "flight_takeoff",
         "titolo": "Adventure",
-        "testo": "Leave worry-free, with assistance guaranteed throughout your journey."
+        "testo": "Pack your bags and leave your worries behind; I will take care of every detail."
       }
     ]
   },
