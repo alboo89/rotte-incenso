@@ -5,7 +5,7 @@
   "lista": [
     {
       "icona": "explore",
-      "titolo": "Itinerari su Misura",
+      "titolo": "Viaggi su Misura",
       "testo": "Progettazione completa del tuo viaggio, dalla prima idea alla partenza: alloggi, esperienze e ritmi cuciti su di te.",
       "punti": [
         "Consulenza iniziale approfondita",
@@ -16,8 +16,8 @@
     },
     {
       "icona": "chat",
-      "titolo": "Consulenza di Viaggio",
-      "testo": "Hai già in mente una destinazione, ma non sai bene da dove cominciare? Oppure hai raccolto tante informazioni, ma hai bisogno di qualcuno che ti aiuti a fare ordine e a trasformarle in un progetto concreto?\n\nLa Consulenza di Viaggio è pensata per chi ama organizzare i propri viaggi in autonomia, ma desidera farlo con il supporto di una professionista.\n\nDurante una sessione personalizzata analizzeremo la tua idea di viaggio, mettendo a fuoco le tappe, i tempi, gli spostamenti e le possibilità migliori per costruire un itinerario coerente con i tuoi desideri.",
+      "titolo": "Consulenza di Viaggio per chi vuole prenotare in Autonomia",
+      "testo": "Hai già in mente una destinazione, hai raccolto tante informazioni, ma hai bisogno di qualcuno che ti aiuti a fare ordine e a trasformarle in un progetto concreto?\n\nLa Consulenza di Viaggio è pensata per chi ama organizzare i propri viaggi in autonomia, ma desidera farlo con il supporto di una professionista.",
       "punti": [
         "Videochiamata  individuale di 45-60 minuti",
         "Confronto sulla destinazione e sulle diverse possibilità di itinerario,\nsuggerimenti su collegamenti e spostamenti interni, indicazioni sui periodi migliori per partire, in base al clima e alle caratteristiche delle destinazioni.",
@@ -27,15 +27,15 @@
       "prezzo": "A partire da €50, fino a un massimo di €200."
     },
     {
-      "icona": "handshake",
-      "titolo": "Esperienze Locali",
-      "testo": "Prenotazione di singole attività autentiche: artigiani, guide locali e realtà difficili da trovare da soli.",
+      "icona": "groups",
+      "titolo": "Viaggi di Gruppo",
+      "testo": "Nuove destinazioni, nuove persone, esperienze da condividere.\n\nComing Soon!",
       "punti": [
-        "Selezione curata di partner locali",
-        "Prenotazione diretta e assistita",
-        "Nessun sovrapprezzo nascosto"
+        "Partenze programmate: date e destinazioni definite in anticipo.",
+        "Accompagnatore esperto: una figura di riferimento che accompagnerà il gruppo e ne seguirà il viaggio.",
+        "Piccoli gruppi: per favorire la condivisione e vivere il viaggio in modo più piacevole e coinvolgente."
       ],
-      "prezzo": "A partire da €40"
+      "prezzo": "Prezzo definito: una quota di partecipazione chiara, con servizi e inclusioni specificati prima della partenza."
     }
   ]
 }
