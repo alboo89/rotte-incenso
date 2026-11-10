@@ -1,7 +1,7 @@
 {
   "occhiello": "How I can help you",
   "titolo": "My Services",
-  "sottotitolo": "Three different ways to discover your next travel chapter, from targeted support to complete trip design.",
+  "sottotitolo": "Three different ways we can work together!\n\nTailor-Made Travel for those looking for a fully personalised trip, Travel Consultations for those who need expert advice but prefer to plan everything themselves, and Scheduled Group Trips for those who enjoy exploring the world together!",
   "lista": [
     {
       "icona": "explore",
@@ -16,25 +16,26 @@
     },
     {
       "icona": "chat",
-      "titolo": "Travel Consultation",
-      "testo": "A strategic session for those who want to organise things themselves, with the reassurance of an expert method behind them.",
+      "titolo": "Travel Consultation for those who prefer to book everything independently.",
+      "testo": "Do you already have a destination in mind and have gathered plenty of information, but need someone to help you make sense of it all and turn your ideas into a concrete travel plan?\n\nThe Travel Consultation is designed for those who enjoy organising their own trips but would like the guidance and expertise of a travel professional along the way.",
       "punti": [
         "45-60 minute video call",
-        "Advice on routes and seasons",
-        "Written summary after the call"
+        "Discussion of your chosen destination and possible itinerary options.\n\nRecommendations on transport connections and getting around locally.\n\nAdvice on the best time to travel, taking into account the climate and specific characteristics of each destination.",
+        "Suggestions for experiences, places and lesser-known areas worth exploring.",
+        "A written summary after the consultation, including the main recommendations discussed during our call. Alternatively, upon request, a detailed itinerary that you can book independently."
       ],
-      "prezzo": "From €120"
+      "prezzo": "Starting from €50, up to a maximum of €200."
     },
     {
-      "icona": "handshake",
-      "titolo": "Local Experiences",
-      "testo": "Booking of individual authentic activities: artisans, local guides and places that are hard to find on your own.",
+      "icona": "groups",
+      "titolo": "Scheduled Group Trips",
+      "testo": "New destinations, new people, experiences to share. \nComing Soon!",
       "punti": [
-        "Curated selection of local partners",
-        "Direct, assisted booking",
-        "No hidden markups"
+        "Scheduled departures: dates and destinations planned in advance.",
+        "Experienced tour leader: a dedicated point of reference who will accompany the group throughout the journey.",
+        "Small groups of 6 to 10 people: creating a more personal atmosphere and making it easier to connect, share experiences and enjoy the journey together."
       ],
-      "prezzo": "From €40"
+      "prezzo": "Fixed price: a clear participation fee, with all included services and details outlined before departure."
     }
   ]
 }
